@@ -1,11 +1,17 @@
 import React from "react"
 import './index.css'
+import Home from "./pages/Home"
+import AboutUs from "./pages/AboutUs"
+import OurWork from "./pages/OurWork"
+
 
 function App() {
-  return(
-    <div className="bg-slate-600 text-white">
-      <p>Hello world</p>
-    </div>
+  return(  
+    <div>
+      {/** <Home/>*/}
+      {/** <AboutUs/>*/}
+      <OurWork/>
+    </div> 
   )
 }
 
