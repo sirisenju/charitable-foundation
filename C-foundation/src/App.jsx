@@ -3,6 +3,7 @@ import './index.css'
 import Home from "./pages/Home"
 import AboutUs from "./pages/AboutUs"
 import OurWork from "./pages/OurWork"
+import ContactUs from "./pages/ContactUs"
 
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
     <div>
       {/** <Home/>*/}
       {/** <AboutUs/>*/}
-      <OurWork/>
+      {/** <OurWork/>*/}
+      <ContactUs/>
     </div> 
   )
 }
