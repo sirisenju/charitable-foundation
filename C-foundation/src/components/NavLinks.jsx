@@ -4,17 +4,19 @@ import navigation from "../../lib/navigationCtr";
 
 function NavLinks() {
   return (
-    <section className="w-full flex justify-between bg-nav-color">
-      <div className="flex p-2">
-        <img src="src/assets/logo1.png" className="w-10 h-10 ml-8" alt="" />
+    <section className="bg-nav-color">
+      <div className="w-full md:w-[90%] mx-auto flex justify-between ">
+      <div className="flex p-4">
+        <img src="src/assets/logo1.png" className="w-8 h-8" alt="" />
+        <p className="pl-2 sm:hidden">The Royal Family Charitable Foundation</p>
         <ul className="flex gap-x-6 items-center ml-20">
           {navigation.map((item) => (
-            <li>
+            <li className="hidden sm:inline">
               <NavLink
                 to={item.href}
-                key={item.name}
+                key={item.id}
                 className={({ isActive }) =>
-                  isActive ? " bg-green-200" : " bg-red-400"
+                  isActive ? " " : " "
                 }
               >
                 {item.name}
@@ -23,15 +25,16 @@ function NavLinks() {
           ))}
         </ul>
       </div>
-      <div className="flex items-center m-2">
-        <ul className="flex gap-x-6 pr-10 items-center">
-          <li>+234 806 789 0957</li>
+      <div className="flex items-center m-2 bg-green-300 hidden">
+        <ul className="flex gap-x-6 items-center">
+          <li className="hidden md:inline">+234 806 789 0957</li>
           <li>
-            <button className="bg-[#FFD8BE] rounded-tl-3xl rounded-br-3xl p-2">
-              Make a Donation
+            <button className="bg-[#FFD8BE] rounded-3xl px-6 py-2">
+              Donate
             </button>
           </li>
         </ul>
+      </div>
       </div>
     </section>
   );

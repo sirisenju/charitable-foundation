@@ -1,10 +1,10 @@
 
 const navigation = [
-    { name: "Home", href: "/home" },
-    { name: "About Us", href: "/aboutUs" },
-    { name: "Our Work", href: "/ourwork" },
-    { name: "Contact Us", href: "/contactUs" },
-    { name: "Gallery", href: "/gallery" },
+    { id: 1, name: "Home", href: "/home" },
+    { id: 2, name: "About Us", href: "/aboutUs" },
+    { id: 3, name: "Our Work", href: "/ourwork" },
+    { id: 4, name: "Contact Us", href: "/contactUs" },
+    { id: 5, name: "Gallery", href: "/gallery" },
 ];
   
 export default navigation;

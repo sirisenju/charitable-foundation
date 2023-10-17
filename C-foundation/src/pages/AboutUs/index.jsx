@@ -8,19 +8,28 @@ function AboutUs() {
     <main>
       <NavLinks />
       {/**hero section starts..........................................................*/}
-      <section className="h-screen overflow-clip bg-[#F8F7FF]">
-        <div className="w-[80%] min-h-min flex relative mx-auto pt-12">
-          <div className="h-[300px] w-[1000px] -rotate-45 bg-[#FFEEDD] absolute -left-32 top-32 rounded-full"></div>
-          <div className="w-1/2 flex items-center pl-10 relative">
-            <div className="max-w-lg min-h-min">
-              <h1 className=" text-xl">
+      <section className="w-full h-full lg:h-screen bg-[#F8F7FF]">
+        <div className="w-full sm:w-[80%] inline lg:flex relative lg:justify-center mx-auto pt-12">
+          <div className="relative lg:order-last flex justify-center">
+            <div className="h-[300px] w-full -rotate-45 bg-[#FFEEDD] absolute -right-28 -top-8 rounded-full hidden"></div>
+            <img
+              src="src/assets/africaMap.png"
+              className="relative object-cover object-center bg-no-repeat w-[600px] max-[290px]:w-full"
+              alt=""
+            />
+          </div>
+          <p className="text-center pb-5 text-2xl font-bold sm:hidden p-2">The Joy Is In Giving</p>
+          <div className="h-[300px] w-[1000px] -rotate-45 bg-[#FFEEDD] absolute -left-32 top-32 rounded-full hidden"></div>
+          <div className="flex lg:max-w-lg p-4 items-center">
+            <div className="w-full">
+              <h1 className="text-xl flex-wrap">
                 Welcome to <br />
                 <span className=" text-4xl">
                   The Royal Family Charitable Empowerment Foundation
                 </span>{" "}
                 - Where Hope finds a home.
               </h1>
-              <p className=" text-lg pt-2 pb-2">
+              <p className="text-lg pt-2 pb-2">
                 We believe that every child deserves a loving and nurturing
                 environment to thrive and grow. Our mission is to provide a safe
                 and caring home for orphaned and vulnerable children, giving
@@ -28,12 +37,12 @@ function AboutUs() {
                 opportunity.
               </p>
               <button>More about us</button>
-              <div className=" max-w-md mt-4 flex gap-x-2">
-                <div className=" border-r-2 p-2">
+              <div className="max-w-md mt-4 max-[290px]:inline flex gap-x-2">
+                <div className="border-r-2 p-2">
                   4+ <br />
                   years experience
                 </div>
-                <div className=" border-r-2 p-2">
+                <div className="border-r-2 p-2">
                   1000+ <br />
                   Volunteers
                 </div>
@@ -43,14 +52,6 @@ function AboutUs() {
                 </div>
               </div>
             </div>
-          </div>
-          <div className=" w-1/2 min-h-min relative">
-            <div className=" h-[300px] w-full -rotate-45 bg-[#FFEEDD] absolute -right-28 -top-8 rounded-full"></div>
-            <img
-              src="src/assets/africaMap.png"
-              className="relative right-10"
-              alt=""
-            />
           </div>
         </div>
       </section>
@@ -72,9 +73,9 @@ function AboutUs() {
               magnam in veniam! Repudiandae, explicabo.
             </p>
           </div>
-          <div className="w-[90%] mx-auto flex justify-center gap-x-8 mt-4">
+          <div className="w-full sm:w-[60%] lg:w-[80%] mx-auto p-4 grid place-items-center grid-cols-1 xss:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-8 mt-4">
             <div className="bg-nav-color w-44 max-h-min text-center p-4 rounded-tl-3xl rounded-br-3xl shadow-md">
-              <FaGraduationCap size={50} className="mx-auto pb-2" />
+              <FaGraduationCap size={50} className="mx-auto pb-2"/>
               <h3 className="pb-2 font-bold">Free Access</h3>
               <p className="pb-2 ">
                 Lorem ipsum dolor sit amet consectetur adipisicing.
@@ -108,7 +109,7 @@ function AboutUs() {
 
       {/**support us section starts..........................................................*/}
       <section className="min-h-min w-full bg-nav-color">
-        <div className=" w-[80%] mx-auto pt-4 pb-8">
+        <div className="w-full p-3 sm:w-[90%] md:w-[80%] mx-auto pt-4 pb-8">
           <div className=" max-w-sm mx-auto text-center pt-4">
             <p className=" text-sm">Join Us</p>
             <h2 className=" text-xl pb-4">
@@ -117,16 +118,16 @@ function AboutUs() {
             </h2>
           </div>
           <div className="w-full min-h-max">
-            <div className="flex w-full">
-              <div className="w-[50%]">
+            <div className="inline sm:flex w-full">
+              <div className="w-full sm:w-[50%]">
                 <img
                   src="src/assets/4-kids.jpg"
-                  className=" h-[400px] object-cover object-center"
+                  className="h-[400px] object-cover object-center"
                   alt=""
                 />
               </div>
-              <div className="w-[50%] p-6 flex items-center">
-                <div className="max-w-lg">
+              <div className="w-full sm:w-[50%] p-0 sm:p-6 flex items-center">
+                <div className="max-w-lg pt-4 sm:pt-0">
                   <p className=" text-sm pb-2">Support Us</p>
                   <h2 className=" text-2xl pb-3">
                     Support our mission by donating a token today!
@@ -142,9 +143,16 @@ function AboutUs() {
                 </div>
               </div>
             </div>
-            <div className="flex">
-              <div className="w-[50%] flex items-center">
-                <div className="max-w-lg p-6">
+            <div className="inline sm:flex">
+              <div className="w-full sm:w-[50%] sm:order-last mt-4 sm:mt-0">
+                <img
+                  src="src/assets/4-kids.jpg"
+                  className="h-[400px] object-cover object-center"
+                  alt=""
+                />
+              </div>
+              <div className="w-full sm:w-[50%] flex items-center pt-4">
+                <div className="max-w-lg sm:p-6">
                   <p className="text-sm">Support Us</p>
                   <h2 className=" text-xl">
                     Let us create something great together!
@@ -177,13 +185,6 @@ function AboutUs() {
                   </div>
                 </div>
               </div>
-              <div className="w-[50%]">
-                <img
-                  src="src/assets/4-kids.jpg"
-                  className="h-[400px] object-cover object-center"
-                  alt=""
-                />
-              </div>
             </div>
           </div>
         </div>
@@ -191,8 +192,8 @@ function AboutUs() {
       {/**support us section ends..........................................................*/}
 
       {/**campaings section starts..........................................................*/}
-      <section className="min-h-max pb-12 bg-[#F8F7FF]">
-        <div className="w-[80%] mx-auto">
+      <section className="min-h-max pb-10 bg-[#F8F7FF]">
+        <div className="w-full p-4 md:w-[80%] mx-auto">
           <div className=" max-w-md mx-auto text-center pt-10">
             <p className=" text-sm pb-2">projects we've done</p>
             <h2 className=" text-2xl pb-2">Featured Campaings</h2>
@@ -201,8 +202,8 @@ function AboutUs() {
               molestiae rerum fugiat ex doloribus? Repellat modi harum nobis.
             </p>
           </div>
-          <div className="w-full flex justify-between">
-            <div className="max-w-xs min-h-max bg-yellow-50 shadow-md rounded-tr-3xl">
+          <div className="w-full grid grid-cols-1 gap-x-4 gap-y-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="max-w-xs min-h-max mx-auto bg-yellow-50 shadow-md rounded-tr-3xl mb-5 sm:mb-0">
               <img
                 src="src/assets/4-kids.jpg"
                 className="rounded-tr-3xl rounded-bl-3xl"
@@ -234,7 +235,7 @@ function AboutUs() {
                 </div>
               </div>
             </div>
-            <div className="max-w-xs min-h-max bg-yellow-50 shadow-md rounded-tr-3xl">
+            <div className="max-w-xs min-h-max mx-auto bg-yellow-50 shadow-md rounded-tr-3xl mb-5 sm:mb-0">
               <img
                 src="src/assets/4-kids.jpg"
                 className="rounded-tr-3xl rounded-bl-3xl"
@@ -266,7 +267,7 @@ function AboutUs() {
                 </div>
               </div>
             </div>
-            <div className="max-w-xs min-h-max bg-yellow-50 shadow-md rounded-tr-3xl">
+            <div className="max-w-xs min-h-max mx-auto bg-yellow-50 shadow-md rounded-tr-3xl mb-5 sm:mb-0">
               <img
                 src="src/assets/4-kids.jpg"
                 className="rounded-tr-3xl rounded-bl-3xl"
@@ -304,19 +305,19 @@ function AboutUs() {
       {/**campaings section ends..........................................................*/}
 
       {/**become a volunteer section starts..........................................................*/}
-      <section className=" min-h-min bg-[#FFD8BE] py-12">
-        <p className=" text-center pb-8">An open invite. Come serve the community with us!</p>
-        <div className="w-[80%] mx-auto flex h-auto">
-          <div className=" max-w-xl self-center min-h-min p-4">
+      <section className=" min-h-min bg-[#FFD8BE] py-8">
+        <p className=" text-center pb-6">An open invite. Come serve the community with us!</p>
+        <div className="w-full sm:w-[80%] mx-auto sm:flex h-auto p-2">
+          <div className="w-full sm:order-last">
+            <img src="src/assets/female-kids.jpg" className="object-cover object-center" alt="" />
+          </div>
+          <div className="max-w-xl self-center min-h-min p-3">
             <h3 className="pb-3 text-sm">Volunteer</h3>
             <p className="pb-3 text-3xl">Lorem ipsum, dolor sit amet <br />consectetur adipisicing elit.</p>
             <p className=" pb-3 text-base">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
               Iure dolorum accusantium debitis voluptatibus. Unde deserunt fuga autem sequi harum cum?
             </p>
             <button className="bg-blue-300 py-2 px-10 rounded-3xl">Join us</button>
-          </div>
-          <div className="w-full">
-            <img src="src/assets/female-kids.jpg" className=" object-cover" alt="" />
           </div>
         </div>
       </section>

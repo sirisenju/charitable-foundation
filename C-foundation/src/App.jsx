@@ -10,7 +10,7 @@ import Gallery from "./pages/Gallery"
 function App() {
   return(  
     <div>
-      
+      <Home/>
     </div> 
   )
 }

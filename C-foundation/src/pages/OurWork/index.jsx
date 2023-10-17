@@ -7,24 +7,25 @@ function OurWork() {
         <main>
             <NavLinks/>
             {/**hero section for our work.........................................................*/}
-            <section className='min-h-min bg-[#F8F7FF] pt-[6%] pb-[6%]'>
-                <div className='w-[80%] mx-auto flex justify-between items-center'>
-                    <div className='max-w-xl p-2'>
-                        <p className=' pb-3'>Our work</p>
-                        <h2 className=' text-xl pb-3 font-semibold'>Lorem, ipsum dolor sit amet <br />consectetur adipisicing elit.</h2>
-                        <p className=' text-base'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                            Repellendus culpa exercitationem doloremque, provident ab atque eveniet quod eligendi.</p>
+            <section className='h-full bg-[#F8F7FF] pb-[6%]'>
+                <div className='w-full md:w-[90%] mx-auto sm:flex justify-between items-center max-w-5xl'>
+                    <div className='w-full sm:max-w-xl p-2'>
+                        <p className='pb-3'>Our work</p>
+                        <h2 className='text-xl pb-3 font-semibold'>Lorem, ipsum dolor sit amet <br />consectetur adipisicing elit.</h2>
+                        <p className='text-base'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Repellendus culpa exercitationem doloremque, provident ab atque eveniet quod eligendi.
+                        </p>
                     </div>
-                    <div className='w-full bg-transparent pl-5 pr-5'>
-                        <div className='h-[300px] pt-4'>
-                            <img src="src/assets/4-kids.jpg" className='rounded-tr-[100px] rounded-bl-[100px] h-full w-full object-cover' alt="" />
+                    <div className='w-full bg-transparent p-2 sm:p-5'>
+                        <div className='h-[300px] sm:h-[300px]'>
+                            <img src="src/assets/4-kids.jpg" className='sm:rounded-tr-[100px] sm:rounded-bl-[100px] h-full w-full object-cover' alt="" />
                         </div>
-                        <div className='flex w-full gap-x-4 pt-4 pb-4'>
-                           <div className='w-1/2'>
-                                <img src="src/assets/female-kids.jpg" className='h-[170px] w-full object-cover rounded-tr-[100px] rounded-bl-[100px]' alt="" />
+                        <div className='sm:flex sm:flex-wrap w-full sm:gap-x-4'>
+                           <div className='w-full sm:w-1/2 flex-grow basis-[210px] sm:pt-4'>
+                                <img src="src/assets/female-kids.jpg" className='h-[210px] sm:h-[190px] w-full object-cover sm:rounded-tr-[100px] sm:rounded-bl-[100px]' alt="" />
                            </div>
-                           <div className='w-1/2'>
-                                <img src="src/assets/smilling-children.jpg" className='h-[170px] w-full object-cover rounded-tr-[100px] rounded-bl-[100px]' alt="" />
+                           <div className='w-full sm:w-1/2 sm:pt-4 flex-grow basis-[210px]'>
+                                <img src="src/assets/smilling-children.jpg" className='h-[210px] sm:h-[190px] w-full object-cover sm:rounded-tr-[100px] sm:rounded-bl-[100px]' alt="" />
                            </div>
                         </div>
                     </div>
@@ -34,47 +35,47 @@ function OurWork() {
 
             {/**seccond section starts for our work.........................................................*/}
                 <section className='h-full bg-[#425F57]'>
-                    <div className='w-[80%] min-h-min mx-auto pb-10'>
-                        <div className='w-[75%] mx-auto mb-4 pt-4 pb-4 text-white'>
-                            <h3 className=' text-xl pb-2'>Donate who Deserved</h3>
-                            <p className=' text-base max-w-[500px]'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    <div className='w-full sm:w-[90%] min-h-min mx-auto pb-14 p-2 max-w-6xl'>
+                        <div className='sm:w-[75%] mx-auto mb-4 pt-4 pb-4 text-white'>
+                            <h3 className='text-xl pb-2'>Donate who Deserved</h3>
+                            <p className='text-base max-w-[500px]'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                                 Voluptates modi assumenda possimus rem quas at itaque ipsum magnam voluptatum similique.
                             </p>
                         </div>
-                        <div className='w-[75%] mx-auto p-14 relative'>
-                            <img src="src/assets/connecting-lines.png" className='h-[600px] object-center mx-auto' alt="" />
-                            <div className='h-auto max-w-sm absolute bg-[#526F67]/50 rounded-lg backdrop-blur-xl bg-opacity-50 shadow-lg top-0 left-[10%] p-2 flex'>
+                        <div className='w-full sm:w-[75%] mx-auto sm:p-14 relative'>
+                            <img src="src/assets/connecting-lines.png" className='h-[600px] object-center mx-auto hidden sm:block' alt="" />
+                            <div className='h-auto w-full sm:max-w-md sm:absolute bg-[#526F67]/50 rounded-lg backdrop-blur-xl bg-opacity-50 shadow-lg top-0 left-[10%] p-2 flex flex-wrap mb-4'>
                                 <img src="src/assets/simple-smile.jpg" className=' object-cover h-28 w-28 relative' alt="" />
-                                <div className='pl-2 self-center relative'>
+                                <div className='pl-4 self-center relative flex-grow basis-[120px] items-start'>
                                     <p className='pb-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                     <button className='bg-yellow-300  px-7 py-1'>Donate</button>
                                 </div>
                             </div>
-                            <div className='min-h-min max-w-none p-2 absolute bg-[#526F67]/50 rounded-lg backdrop-blur-xl bg-opacity-50 shadow-lg top-[25%] right-0'>
+                            <div className='min-h-min w-full sm:max-w-sm sm:absolute p-2 bg-[#526F67]/50 rounded-lg backdrop-blur-xl bg-opacity-50 shadow-lg top-[23%] -right-[18%] flex flex-wrap mb-4'>
                                 <img src="src/assets/simple-smile.jpg" className=' object-cover h-28 w-28 relative' alt="" />
-                                <div className='max-w-[230px] relative'>
+                                <div className='relative flex-grow basis-[120px] pl-4 items-start'>
                                     <p className='pb-2 pt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                     <button className='bg-yellow-300 px-7 py-1'>Donate</button>
                                 </div>
                             </div>
-                            <div className='h-auto max-w-sm flex p-2 absolute bg-[#526F67]/50 rounded-lg backdrop-blur-xl bg-opacity-50 shadow-lg  top-[43%] left-0'>
+                            <div className='h-auto w-full sm:max-w-sm p-2 sm:absolute bg-[#526F67]/50 rounded-lg backdrop-blur-xl bg-opacity-50 shadow-lg top-[43%] -left-[10%] flex flex-wrap mb-4'>
                                 <img src="src/assets/simple-smile.jpg" className=' object-cover h-28 w-28 relative' alt="" />
-                                <div className='pl-2 self-center max-w-[200px] relative'>
-                                    <p className='pb-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <div className='flex-grow basis-[120px] pl-4 relative items-start'>
+                                    <p className='pb-2 pt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                     <button className='bg-yellow-300 px-7 py-1'>Donate</button>
                                 </div>
                             </div>
-                            <div className='h-auto max-w-sm flex p-2 absolute bg-[#526F67]/50 rounded-lg backdrop-blur-xl bg-opacity-50 shadow-lg  bottom-[13%] right-10'>
+                            <div className='h-auto w-full sm:max-w-sm p-2 sm:absolute bg-[#526F67]/50 rounded-lg backdrop-blur-xl bg-opacity-50 shadow-lg  bottom-[13%] right-[3%] flex flex-wrap mb-4'>
                                 <img src="src/assets/simple-smile.jpg" className=' object-cover h-28 w-28' alt="" />
-                                <div className='pl-2 self-center max-w-[200px]'>
-                                    <p className='pb-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <div className='flex-grow basis-[120px] pl-4 relative items-start'>
+                                    <p className='pb-2 pt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                     <button className='bg-yellow-300 px-7 py-1'>Donate</button>
                                 </div>
                             </div>
-                            <div className='h-auto max-w-sm flex p-2 absolute bg-[#526F67]/50 rounded-lg backdrop-blur-xl bg-opacity-50 shadow-lg  bottom-0 left-0'>
+                            <div className='h-auto w-full sm:max-w-sm p-2 sm:absolute bg-[#526F67]/50 rounded-lg backdrop-blur-xl bg-opacity-50 shadow-lg -bottom-[5%] -left-[8%] flex flex-wrap'>
                                 <img src="src/assets/simple-smile.jpg" className=' object-cover h-28 w-28' alt="" />
-                                <div className='pl-2 self-center max-w-[200px]'>
-                                    <p className='pb-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <div className='flex-grow basis-[120px] pl-4 relative items-start'>
+                                    <p className='pb-2 pt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                     <button className=' bg-yellow-300 px-7 py-1'>Donate</button>
                                 </div>
                             </div>
@@ -85,17 +86,17 @@ function OurWork() {
 
             {/**story section starts for our work.........................................................*/}
             <section className='h-full'>
-                <div className=' w-[80%] min-h-min mx-auto'>
+                <div className='w-full sm:w-[80%] min-h-min mx-auto p-2'>
                     <div className='max-w-sm mx-auto'>
-                        <h3 className='text-center text-2xl pb-2 pt-4'>Read our stories, share our dreams.</h3>
+                        <h3 className='text-start sm:text-center text-2xl pb-2 pt-4'>Read our stories, share our dreams.</h3>
                         <p className='text-base pb-2 pt-2'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, recusandae. 
                             Molestias quia culpa at similique.
                         </p>
                     </div>
-                    <div className='max-w-4xl mx-auto p-4'>
+                    <div className='max-w-4xl mx-auto mt-5'>
                         <h3 className='text-3xl pb-4'>Story of Emilia</h3>
-                        <div className='float-right pl-10'>
-                            <img src="src/assets/emilia.jpg" className='h-[330px] w-[290px] object-cover' alt="" />
+                        <div className='float-none sm:float-right pl-0 sm:pl-10'>
+                            <img src="src/assets/emilia.jpg" className='h-[330px] sm:w-[290px] w-full object-cover' alt="" />
                         </div>
                         <p className='text-justify'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime veniam, illo, exercitationem, 
                             sint omnis ducimus ratione provident tempore sed accusamus facilis. Rerum nostrum illo earum aliquam iusto fugit aut 
@@ -111,10 +112,10 @@ function OurWork() {
                             Itaque animi repellat excepturi minima ea sunt eos accusantium dignissimos culpa!
                         </p>
                     </div>
-                    <div className='max-w-4xl mx-auto p-4'>
-                        <h3 className='text-3xl pb-4 text-end'>Story of Rohan</h3>
-                        <div className='float-left pr-10'>
-                            <img src="src/assets/emilia.jpg" className='h-[330px] w-[290px] object-cover' alt="" />
+                    <div className='max-w-4xl mx-auto mt-5'>
+                        <h3 className='text-3xl pb-4 text-start sm:text-end'>Story of Rohan</h3>
+                        <div className='float-none sm:float-left pr-0 sm:pr-10'>
+                            <img src="src/assets/emilia.jpg" className='h-[330px] sm:w-[290px] w-full object-cover' alt="" />
                         </div>
                         <p className='text-justify'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime veniam, illo, exercitationem, 
                             sint omnis ducimus ratione provident tempore sed accusamus facilis. Rerum nostrum illo earum aliquam iusto fugit aut 
@@ -130,30 +131,31 @@ function OurWork() {
                             Itaque animi repellat excepturi minima ea sunt eos accusantium dignissimos culpa!
                         </p>
                     </div>
-                    <div className='w-full mt-8 pb-10'>
+                    <div className='w-full mt-8 pb-10 p-2'>
                         <div className='max-w-xl mx-auto text-center'>
                             <h3 className='text-2xl pt-2 pb-2'>Sponsors and Partners.</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                                 Similique, sit perferendis! Ipsum soluta tempore quaerat quos voluptatem, iusto aliquam quisquam.
                             </p>
                         </div>
-                        <div className='flex justify-center gap-x-20 pt-8'>
-                            <img src="src/assets/logos/logo-1.png" className=' h-20 w-32 object-contain' alt="Logo" />
-                            <img src="src/assets/logos/logo-2.png" className=' h-20 w-32 object-contain' alt="Logo" />
-                            <img src="src/assets/logos/logo-3.png" className=' h-20 w-32 object-contain' alt="Logo" />
-                            <img src="src/assets/logos/logo-4.png" className=' h-20 w-32 object-contain' alt="Logo" />
-                            <img src="src/assets/logos/logo-5.png" className=' h-20 w-32 object-contain' alt="Logo" />
+                        <div className='flex flex-wrap justify-center gap-x-20 gap-y-10 pt-8'>
+                            <img src="src/assets/logos/logo-1.png" className=' h-20 w-32 object-contain flex-grow basis-[100px]' alt="Logo" />
+                            <img src="src/assets/logos/logo-2.png" className=' h-20 w-32 object-contain flex-grow basis-[100px]' alt="Logo" />
+                            <img src="src/assets/logos/logo-3.png" className=' h-20 w-32 object-contain flex-grow basis-[100px]' alt="Logo" />
+                            <img src="src/assets/logos/logo-4.png" className=' h-20 w-32 object-contain flex-grow basis-[100px]' alt="Logo" />
+                            <img src="src/assets/logos/logo-5.png" className=' h-20 w-32 object-contain flex-grow basis-[100px]' alt="Logo" />
                         </div>
                     </div>
                 </div>
             </section>
             {/**story section ends for our work.........................................................*/}
-            <section className='min-h-min pb-4'>
-                <div className=' min-h-min p-4 mx-auto relative text-white'>
-                    <img src="src/assets/smilling-children.jpg" className='h-[570px] w-full object-cover object-center rounded-2xl' alt="" />
-                    <p className='text-3xl font-semibold absolute right-10 top-[20%]'>We Make A Diffrence <br />In Their Lives.</p>
+            <section className='min-h-min'>
+                <div className='min-h-min sm:p-2 mx-auto relative text-white'>
+                    <img src="src/assets/smilling-children.jpg" className='h-[570px] w-full object-cover object-center sm:rounded-2xl' alt="" />
+                    <p className='text-3xl font-semibold absolute right-[10%] top-[25%]'>We Make A Diffrence <br />In Their Lives.</p>
                 </div>
             </section>
+            {/**story section ends for our work.........................................................*/}
             <Footer/>
         </main>
     )

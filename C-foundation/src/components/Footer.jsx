@@ -4,7 +4,7 @@ import { FaChevronRight, FaEnvelopeSquare, FaFacebookSquare, FaWhatsappSquare } 
 function Footer() {
     return (
         <section className='min-h-min bg-[#eee3d8] pb-[6%] pt-[6%]'>
-            <div className='w-[80%] grid grid-cols-2 mx-auto h-[40%]'>
+            <div className='w-full md:w-[80%] grid grid-cols-1 sm:grid-cols-2 mx-auto h-[40%]'>
                 <div className='max-w-lg p-4'>
                     <div className='flex items-center pb-3'>
                         <img src="src/assets/logo1.png" className='h-10 w-10' alt="" /> 
@@ -17,7 +17,7 @@ function Footer() {
                         <FaEnvelopeSquare size={25}/>
                     </div>
                 </div>
-                <div className='grid grid-cols-3'>
+                <div className='grid grid-cols-2 md:grid-cols-3'>
                     <div className='max-w-lg p-4'>
                         <p className='pb-2'>Menu</p>
                         <ul>
@@ -45,7 +45,7 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <div className='mx-auto w-[80%] flex justify-between p-4 border-t-2 border-gray-400'>
+            <div className='mx-auto w-full md:w-[80%] flex justify-between p-4 border-t-2 border-gray-400'>
                 <p>Powered by ROOT. All rights reserved.</p>
                 <p>copyright 2023</p>
             </div>
