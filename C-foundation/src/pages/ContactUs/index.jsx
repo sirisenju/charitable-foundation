@@ -18,8 +18,8 @@ function ContactUs() {
                     </div>
                     <div>
                     <div className='block sm:flex sm:flex-wrap w-full gap-x-4 pt-4 justify-center'>
-                        <img src="src/assets/volunteer1.png" className='w-[570px] h-[450px] object-cover object-center' alt="" />
-                        <img src="src/assets/volunteer2.png" className='w-[570px] h-[450px] object-cover object-center' alt="" />
+                        <img src="/assets/volunteer1.png" className='w-[570px] h-[450px] object-cover object-center' alt="" />
+                        <img src="/assets/volunteer2.png" className='w-[570px] h-[450px] object-cover object-center' alt="" />
                     </div>
                     <div className='text-start sm:text-justify pt-4'>
                         <h3 className=' text-3xl font-semibold pb-2'>Become a volunteer today, become one of us.</h3>
@@ -45,7 +45,7 @@ function ContactUs() {
                     </div>
                     <div className='block sm:flex sm:flex-wrap h-full justify-between'>
                         <div className='max-w-[290px] relative mx-auto'>
-                            <img src="src/assets/person1.jpg" className='w-full object-cover' alt="" />
+                            <img src="/assets/person1.jpg" className='w-full object-cover' alt="" />
                             <div className=' bg-[#FFF8F8] relative mxl:absolute w-[90%] bottom-12 mxl:-bottom-16 mx-auto left-0 right-0 text-center rounded-3xl p-2'>
                                 <p className='text-xl'>Ketty Perry</p>
                                 <p className='text-base'>Head Volunteer</p>
@@ -57,7 +57,7 @@ function ContactUs() {
                             </div>
                         </div>
                         <div className='max-w-[290px] relative mx-auto'>
-                            <img src="src/assets/person1.jpg" className='w-full object-cover' alt="" />
+                            <img src="/assets/person1.jpg" className='w-full object-cover' alt="" />
                             <div className=' bg-[#FFF8F8] relative mxl:absolute w-[90%] bottom-12 mxl:-bottom-16 mx-auto left-0 right-0 text-center rounded-3xl p-2'>
                                 <p className='text-xl'>Ketty Perry</p>
                                 <p className='text-base'>Head Volunteer</p>
@@ -69,7 +69,7 @@ function ContactUs() {
                             </div>
                         </div>
                         <div className='max-w-[290px] relative mx-auto'>
-                            <img src="src/assets/person1.jpg" className='w-full object-cover' alt="" />
+                            <img src="/assets/person1.jpg" className='w-full object-cover' alt="" />
                             <div className=' bg-[#FFF8F8] relative mxl:absolute w-[90%] bottom-12 mxl:-bottom-16 mx-auto left-0 right-0 text-center rounded-3xl p-2'>
                                 <p className='text-xl'>Ketty Perry</p>
                                 <p className='text-base'>Head Volunteer</p>
@@ -81,7 +81,7 @@ function ContactUs() {
                             </div>
                         </div>
                         <div className='max-w-[290px] relative mx-auto'>
-                            <img src="src/assets/person1.jpg" className='w-full object-cover' alt="" />
+                            <img src="/assets/person1.jpg" className='w-full object-cover' alt="" />
                             <div className=' bg-[#FFF8F8] relative mxl:absolute w-[90%] bottom-12 mxl:-bottom-16 mx-auto left-0 right-0 text-center rounded-3xl p-2'>
                                 <p className='text-xl'>Ketty Perry</p>
                                 <p className='text-base'>Head Volunteer</p>
@@ -106,7 +106,7 @@ function ContactUs() {
                             aliquam necessitatibus magni, incidunt maiores? Eos, sed qui eveniet maxime est modi assumenda?
                         </p>
                     </div>
-                    <img src="src/assets/Donor-Map.png" className='object-center object-contain h-full w-full' alt="" />
+                    <img src="/assets/Donor-Map.png" className='object-center object-contain h-full w-full' alt="" />
                 </div>
             </section>
             {/**our donors map start...................................................................... */}

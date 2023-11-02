@@ -27,14 +27,14 @@ function Gallery() {
             <div className="gallery">
               <div className="image-column">
                 <div className="image">
-                  <img src="src/assets/volunteer1.png" alt="" />
+                  <img src="/assets/volunteer1.png" alt="" />
                   <div className="overlay">
                     <span>pop up kkkk</span>
                   </div>
                 </div>
                 <div className="image">
                   <img
-                    src="src/assets/volunteer2.png"
+                    src="/assets/volunteer2.png"
                     className="h-[500px]"
                     alt=""
                   />
@@ -43,14 +43,14 @@ function Gallery() {
                   </div>
                 </div>
                 <div className="image">
-                  <img src="src/assets/volunteer1.png" alt="" />
+                  <img src="/assets/volunteer1.png" alt="" />
                   <div className="overlay">
                     <span>pop up uu</span>
                   </div>
                 </div>
                 <div className="image">
                   <img
-                    src="src/assets/volunteer1.png"
+                    src="/assets/volunteer1.png"
                     className=" w-[1000px] h-[400px]"
                     alt=""
                   />
@@ -62,7 +62,7 @@ function Gallery() {
               <div className="image-column">
                 <div className="image">
                   <img
-                    src="src/assets/volunteer1.png"
+                    src="/assets/volunteer1.png"
                     className="h-[490px]"
                     alt=""
                   />
@@ -72,7 +72,7 @@ function Gallery() {
                 </div>
                 <div className="image">
                   <img
-                    src="src/assets/volunteer2.png"
+                    src="/assets/volunteer2.png"
                     className="h-[480px]"
                     alt=""
                   />
@@ -82,7 +82,7 @@ function Gallery() {
                 </div>
                 <div className="image flex-1">
                   <img
-                    src="src/assets/volunteer1.png"
+                    src="/assets/volunteer1.png"
                     className="h-full"
                     alt=""
                   />
@@ -94,7 +94,7 @@ function Gallery() {
               <div className="image-column">
                 <div className="image">
                   <img
-                    src="src/assets/volunteer1.png"
+                    src="/assets/volunteer1.png"
                     className=" w-[1000px] h-[400px]"
                     alt=""
                   />
@@ -104,7 +104,7 @@ function Gallery() {
                 </div>
                 <div className="image">
                   <img
-                    src="src/assets/volunteer2.png"
+                    src="/assets/volunteer2.png"
                     className="h-[510px]"
                     alt=""
                   />
@@ -114,7 +114,7 @@ function Gallery() {
                 </div>
                 <div className="image flex-1">
                   <img
-                    src="src/assets/volunteer1.png"
+                    src="/assets/volunteer1.png"
                     className=" w-full h-full"
                     alt=""
                   />
@@ -156,7 +156,7 @@ function Gallery() {
           </div>
           <div className="w-full">
             <img
-              src="src/assets/volunteer1.png"
+              src="/assets/volunteer1.png"
               className="w-full h-full object-cover object-center lg:w-[440px] sm:h-[440px]"
               alt=""
             />
@@ -176,27 +176,27 @@ function Gallery() {
             </div>
             <div className="flex flex-wrap justify-center gap-x-20 gap-y-10 pt-8">
               <img
-                src="src/assets/logos/logo-1.png"
+                src="/assets/logos/logo-1.png"
                 className=" h-20 w-32 object-contain flex-grow basis-[100px]"
                 alt="Logo"
               />
               <img
-                src="src/assets/logos/logo-2.png"
+                src="/assets/logos/logo-2.png"
                 className=" h-20 w-32 object-contain flex-grow basis-[100px]"
                 alt="Logo"
               />
               <img
-                src="src/assets/logos/logo-3.png"
+                src="/assets/logos/logo-3.png"
                 className=" h-20 w-32 object-contain flex-grow basis-[100px]"
                 alt="Logo"
               />
               <img
-                src="src/assets/logos/logo-4.png"
+                src="/assets/logos/logo-4.png"
                 className=" h-20 w-32 object-contain flex-grow basis-[100px]"
                 alt="Logo"
               />
               <img
-                src="src/assets/logos/logo-5.png"
+                src="/assets/logos/logo-5.png"
                 className=" h-20 w-32 object-contain flex-grow basis-[100px]"
                 alt="Logo"
               />

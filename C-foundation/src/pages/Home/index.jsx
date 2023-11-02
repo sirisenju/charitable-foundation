@@ -13,11 +13,11 @@ function Home() {
     <main>
       <section className="relative h-full sm:min-h-screen bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: `url("src/assets/smilling-children.jpg")`,
+        backgroundImage: `url("/assets/smilling-children.jpg")`,
       }}>
         <header className="w-full pt-0">
           <div className="mx-auto w-full md:w-[80%] flex sm:justify-between sm:mx-auto p-3 items-center text-[#DFFFFF]">
-            <img src="src/assets/logo1.png" className="w-10 h-10 max-[450px]:hidden" alt="" />
+            <img src="/assets/logo1.png" className="w-10 h-10 max-[450px]:hidden" alt="" />
             <p className="font-bold text-3xl max-[450px]:pl-0 pl-10 text-center max-[450px]:pt-2">The Royal Family Charitable Foundation</p>
             <ul className="hidden sm:flex w-auto gap-x-8 text-center ">
               {homeNavigation.map((item) => (

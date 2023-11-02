@@ -13,7 +13,7 @@ function AboutUs() {
           <div className="relative lg:order-last flex justify-center">
             <div className="h-[300px] w-full -rotate-45 bg-[#FFEEDD] absolute -right-28 -top-8 rounded-full hidden"></div>
             <img
-              src="src/assets/africaMap.png"
+              src="/assets/africaMap.png"
               className="relative object-cover object-center bg-no-repeat w-[600px] max-[290px]:w-full"
               alt=""
             />
@@ -60,7 +60,7 @@ function AboutUs() {
       {/**features section starts..........................................................*/}
       <section className="min-h-min pb-10 relative">
         <img
-          src=" src/assets/half-world.png"
+          src=" /assets/half-world.png"
           className="absolute opacity-20 h-full object-cover object-center"
           alt=""
         />
@@ -121,7 +121,7 @@ function AboutUs() {
             <div className="inline sm:flex w-full">
               <div className="w-full sm:w-[50%]">
                 <img
-                  src="src/assets/4-kids.jpg"
+                  src="/assets/4-kids.jpg"
                   className="h-[400px] object-cover object-center"
                   alt=""
                 />
@@ -146,7 +146,7 @@ function AboutUs() {
             <div className="inline sm:flex">
               <div className="w-full sm:w-[50%] sm:order-last mt-4 sm:mt-0">
                 <img
-                  src="src/assets/4-kids.jpg"
+                  src="/assets/4-kids.jpg"
                   className="h-[400px] object-cover object-center"
                   alt=""
                 />
@@ -205,7 +205,7 @@ function AboutUs() {
           <div className="w-full grid grid-cols-1 gap-x-4 gap-y-4 sm:grid-cols-2 lg:grid-cols-3">
             <div className="max-w-xs min-h-max mx-auto bg-yellow-50 shadow-md rounded-tr-3xl mb-5 sm:mb-0">
               <img
-                src="src/assets/4-kids.jpg"
+                src="/assets/4-kids.jpg"
                 className="rounded-tr-3xl rounded-bl-3xl"
                 alt=""
               />
@@ -237,7 +237,7 @@ function AboutUs() {
             </div>
             <div className="max-w-xs min-h-max mx-auto bg-yellow-50 shadow-md rounded-tr-3xl mb-5 sm:mb-0">
               <img
-                src="src/assets/4-kids.jpg"
+                src="/assets/4-kids.jpg"
                 className="rounded-tr-3xl rounded-bl-3xl"
                 alt=""
               />
@@ -269,7 +269,7 @@ function AboutUs() {
             </div>
             <div className="max-w-xs min-h-max mx-auto bg-yellow-50 shadow-md rounded-tr-3xl mb-5 sm:mb-0">
               <img
-                src="src/assets/4-kids.jpg"
+                src="/assets/4-kids.jpg"
                 className="rounded-tr-3xl rounded-bl-3xl"
                 alt=""
               />
@@ -309,7 +309,7 @@ function AboutUs() {
         <p className=" text-center pb-6">An open invite. Come serve the community with us!</p>
         <div className="w-full sm:w-[80%] mx-auto sm:flex h-auto p-2">
           <div className="w-full sm:order-last">
-            <img src="src/assets/female-kids.jpg" className="object-cover object-center" alt="" />
+            <img src="/assets/female-kids.jpg" className="object-cover object-center" alt="" />
           </div>
           <div className="max-w-xl self-center min-h-min p-3">
             <h3 className="pb-3 text-sm">Volunteer</h3>
