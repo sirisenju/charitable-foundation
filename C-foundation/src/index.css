@@ -2,59 +2,111 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .gallery {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .gallery .image-column {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .image img {
-    border-radius: 10px;
-    object-fit: cover;
-    object-position: center;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .image {
-    position: relative;
-    cursor: pointer;
+  position: relative;
+  cursor: pointer;
 }
 
 .overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(57, 57, 57, 0.502);
-    top: 0;
-    left: 0;
-    transform: scale(0);
-    transition: all 0.2s 0.1s ease-in-out;
-    color: #fff;
-    border-radius: 5px;
-    /* center overlay text */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(57, 57, 57, 0.502);
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  transition: all 0.2s 0.1s ease-in-out;
+  color: #fff;
+  border-radius: 5px;
+  /* center overlay text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .image:hover .overlay {
-    transform: scale(1);
+  transform: scale(1);
 }
 
 @media only screen and (min-width: 768px) {
-    .gallery {
-      flex-direction: row;
-    }
+  .gallery {
+    flex-direction: row;
   }
+}
+
+
+
+/*accordion styling*/
+.accordion {
+  max-width: 510px;
+}
+
+.accordion-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: white;
+  border-bottom: 2px solid #ececf1;
+}
+
+.accordion-title:hover {
+  background-color: #f4f6fc;
+}
+
+.accordion-title,
+.accordion-content {
+  padding: 0.9rem;
+}
+
+.accordion-content {
+  background-color: white;
+  border-bottom: 8px;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 18px;
+  }
+
+  .accordion {
+    width: 100%;
+  }
+}
+
+
+.hamburger-style {
+  background: hsl(0, 0%, 100% / 0.2);
+  backdrop-filter: blur(40px);
+}
+
+.container {
+  fill: linear-gradient(170deg, rgba(123, 113, 113, 0.16) 0%, rgba(49, 44, 44, 0) 100%);
+  backdrop-filter: saturate(180%) blur(10px);
+
+}

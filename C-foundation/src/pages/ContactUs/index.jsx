@@ -122,13 +122,13 @@ function ContactUs() {
                     </div>
                     <div className='max-w-3xl mx-auto pt-7'>
                         <form action="" className=''>
-                            <div className='flex gap-x-4 text-[#7F7F7F]'>
-                                <input type="text"  placeholder='First name' className='w-[50%] p-3 h-12 mb-4 outline-none rounded-3xl bg-transparent border-2 border-[#7F7F7F]'/>
-                                <input type="text"  placeholder='Email' className='w-[50%] p-3 h-12 mb-4 outline-none rounded-3xl bg-transparent border-2 border-[#7F7F7F]'/>
+                            <div className='flex gap-x-4 text-[#7F7F7F] max-[390px]:inline'>
+                                <input type="text"  placeholder='First name' className='max-[390px]:w-full w-[50%] p-3 h-12 mb-4 outline-none rounded-3xl bg-transparent border-2 border-[#7F7F7F]'/>
+                                <input type="text"  placeholder='Email' className='max-[390px]:w-full w-[50%] p-3 h-12 mb-4 outline-none rounded-3xl bg-transparent border-2 border-[#7F7F7F]'/>
                             </div>
-                            <div className='flex gap-x-4 text-[#7F7F7F]'>
-                                <input type="text"  placeholder='Phone' className='w-[50%] p-3 h-12 mb-4 outline-none rounded-3xl bg-transparent border-2 border-[#7F7F7F]'/>
-                                <input type="text"  placeholder='Subject' className='w-[50%] p-3 h-12 mb-4 outline-none rounded-3xl bg-transparent border-2 border-[#7F7F7F]'/>
+                            <div className='flex gap-x-4 text-[#7F7F7F] max-[390px]:inline'>
+                                <input type="text"  placeholder='Phone' className='max-[390px]:w-full w-[50%] p-3 h-12 mb-4 outline-none rounded-3xl bg-transparent border-2 border-[#7F7F7F]'/>
+                                <input type="text"  placeholder='Subject' className='max-[390px]:w-full w-[50%] p-3 h-12 mb-4 outline-none rounded-3xl bg-transparent border-2 border-[#7F7F7F]'/>
                             </div>
                             <textarea name="" placeholder='Message' id="" className=' w-full h-28 p-3 outline-none rounded-3xl bg-transparent border-2 border-[#7F7F7F]'>
                             </textarea>

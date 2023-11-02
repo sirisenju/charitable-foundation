@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import navigation from "../../lib/navigationCtr";
+import HamburgerComponent from "./HamburgerComponent";
 
 function NavLinks() {
   return (
@@ -25,15 +26,20 @@ function NavLinks() {
           ))}
         </ul>
       </div>
-      <div className="flex items-center m-2 bg-green-300 hidden">
-        <ul className="flex gap-x-6 items-center">
+      <div className="flex items-center">
+        <ul className="flex gap-x-4 items-center">
           <li className="hidden md:inline">+234 806 789 0957</li>
-          <li>
-            <button className="bg-[#FFD8BE] rounded-3xl px-6 py-2">
-              Donate
-            </button>
+          <li className="hidden md:inline">
+            <NavLink 
+              to="/Donation"
+              className={({ isActive }) => isActive ? "bg-[#b8aaa1] rounded-3xl px-6 py-2" : "bg-[#FFD8BE] rounded-3xl px-6 py-2"}>
+                Donate
+            </NavLink>
           </li>
         </ul>
+      </div>
+      <div className="sm:hidden items-start pr-4 flex">
+        <HamburgerComponent/>
       </div>
       </div>
     </section>

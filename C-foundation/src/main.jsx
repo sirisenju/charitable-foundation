@@ -14,6 +14,7 @@ import Home from './pages/Home';
 import OurWork from './pages/OurWork';
 import ContactUs from './pages/ContactUs';
 import Gallery from './pages/Gallery';
+import Donation from './pages/Donation';
 
 function layout(){
   return (
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
   {
     path: "/gallery",
     element: <Gallery/>
+  },
+  {
+    path: "/donation",
+    element: <Donation/>
   }
 ]);
 
