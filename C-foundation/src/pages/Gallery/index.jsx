@@ -9,8 +9,8 @@ function Gallery() {
     <main>
       <NavLinks />
       {/**the gallery section starts....................................................*/}
-      <section className=" min-h-min">
-        <div className="w-full sm:w-[90%] mx-auto p-2 sm:p-0">
+      <section className="min-h-min">
+        <div className="w-full sm:w-[90%] mx-auto p-2 sm:p-0 xl:max-w-7xl">
           {/**heading for our gallery */}
           <div className="max-w-sm text-center mx-auto pt-8 pb-4">
             <h3 className="font-semibold text-3xl pb-2">
@@ -131,7 +131,7 @@ function Gallery() {
 
       {/**the second section starts....................................................*/}
       <section className="h-full">
-        <div className="w-[80%] mx-auto block lg:flex p-2 pt-12 pb-10">
+        <div className="w-[80%] mx-auto block lg:flex p-2 pt-12 pb-10 xl:max-w-6xl">
           <div className="max-w-lg p-2 sm:pr-7">
             <h3 className=" text-3xl font-semibold pt-3 pb-3">
               Why Choose Us?
@@ -164,7 +164,7 @@ function Gallery() {
         </div>
       </section>
       <section className=" h-full">
-        <div className=" w-[80%] mx-auto">
+        <div className=" w-[80%] mx-auto xl:max-w-6xl">
           <div className="w-full mt-8 pb-10 p-2">
             <div className="max-w-xl mx-auto text-center">
               <h3 className="text-2xl pt-2 pb-2">Sponsors and Partners.</h3>

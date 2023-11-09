@@ -8,8 +8,8 @@ function AboutUs() {
     <main>
       <NavLinks />
       {/**hero section starts..........................................................*/}
-      <section className="w-full h-full lg:h-screen bg-[#F8F7FF]">
-        <div className="w-full sm:w-[80%] inline lg:flex relative lg:justify-center mx-auto pt-12">
+      <section className="w-full h-full bg-nav-color">
+        <div className="w-full sm:w-[80%] inline lg:flex relative lg:justify-center mx-auto pt-12 xl:max-w-6xl">
           <div className="relative lg:order-last flex justify-center">
             <div className="h-[300px] w-full -rotate-45 bg-[#FFEEDD] absolute -right-28 -top-8 rounded-full hidden"></div>
             <img
@@ -18,13 +18,13 @@ function AboutUs() {
               alt=""
             />
           </div>
-          <p className="text-center pb-5 text-2xl font-bold sm:hidden p-2">The Joy Is In Giving</p>
+          <p className="text-center pb-5 text-2xl font-bold sm:hidden p-2 font-primaryfont">The Joy Is In Giving</p>
           <div className="h-[300px] w-[1000px] -rotate-45 bg-[#FFEEDD] absolute -left-32 top-32 rounded-full hidden"></div>
           <div className="flex lg:max-w-lg p-4 items-center">
             <div className="w-full">
               <h1 className="text-xl flex-wrap">
                 Welcome to <br />
-                <span className=" text-4xl">
+                <span className=" text-4xl font-boldFont font-bold">
                   The Royal Family Charitable Empowerment Foundation
                 </span>{" "}
                 - Where Hope finds a home.
@@ -64,7 +64,7 @@ function AboutUs() {
           className="absolute opacity-20 h-full object-cover object-center"
           alt=""
         />
-        <div className="w-full min-h-min mx-auto relative">
+        <div className="w-full min-h-min mx-auto relative xl:max-w-6xl">
           <div className="max-w-sm mx-auto text-center pt-4 pb-4">
             <p className=" text-xs pb-2">WHO WE ARE</p>
             <h2 className=" text-xl font-bold pb-2">Make a Difference</h2>
@@ -109,7 +109,7 @@ function AboutUs() {
 
       {/**support us section starts..........................................................*/}
       <section className="min-h-min w-full bg-nav-color">
-        <div className="w-full p-3 sm:w-[90%] md:w-[80%] mx-auto pt-4 pb-8">
+        <div className="w-full p-3 sm:w-[90%] md:w-[80%] mx-auto pt-4 pb-8 xl:max-w-6xl">
           <div className=" max-w-sm mx-auto text-center pt-4">
             <p className=" text-sm">Join Us</p>
             <h2 className=" text-xl pb-4">
@@ -193,7 +193,7 @@ function AboutUs() {
 
       {/**campaings section starts..........................................................*/}
       <section className="min-h-max pb-10 bg-[#F8F7FF]">
-        <div className="w-full p-4 md:w-[80%] mx-auto">
+        <div className="w-full p-4 md:w-[80%] mx-auto xl:max-w-6xl">
           <div className=" max-w-md mx-auto text-center pt-10">
             <p className=" text-sm pb-2">projects we've done</p>
             <h2 className=" text-2xl pb-2">Featured Campaings</h2>
@@ -307,7 +307,7 @@ function AboutUs() {
       {/**become a volunteer section starts..........................................................*/}
       <section className=" min-h-min bg-[#FFD8BE] py-8">
         <p className=" text-center pb-6">An open invite. Come serve the community with us!</p>
-        <div className="w-full sm:w-[80%] mx-auto sm:flex h-auto p-2">
+        <div className="w-full sm:w-[80%] mx-auto sm:flex h-auto p-2 xl:max-w-6xl">
           <div className="w-full sm:order-last">
             <img src="/assets/female-kids.jpg" className="object-cover object-center" alt="" />
           </div>

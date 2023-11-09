@@ -3,11 +3,11 @@ import { FaChevronRight, FaEnvelopeSquare, FaFacebookSquare, FaWhatsappSquare } 
 
 function Footer() {
     return (
-        <section className='min-h-min bg-[#eee3d8] pb-[6%] pt-[6%]'>
-            <div className='w-full md:w-[80%] grid grid-cols-1 sm:grid-cols-2 mx-auto h-[40%]'>
+        <section className='min-h-min bg-[#eee3d8] pb-[6%] pt-[6%] xl:pb-[2%] xl:pt-[2%]'>
+            <div className='w-full md:w-[80%] grid grid-cols-1 sm:grid-cols-2 mx-auto h-[40%] xl:max-w-6xl'>
                 <div className='max-w-lg p-4'>
                     <div className='flex items-center pb-3'>
-                        <img src="src/assets/logo1.png" className='h-10 w-10' alt="" /> 
+                        <img src="/assets/logo1.png" className='h-10 w-10' alt="" /> 
                         <p className='pl-3'>The Royal Family Charitable Foundation</p>     
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -45,7 +45,7 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <div className='mx-auto w-full md:w-[80%] flex justify-between p-4 border-t-2 border-gray-400'>
+            <div className='mx-auto w-full md:w-[80%] flex justify-between p-4 border-t-2 border-gray-400 xl:max-w-6xl'>
                 <p>Powered by ROOT. All rights reserved.</p>
                 <p>copyright 2023</p>
             </div>

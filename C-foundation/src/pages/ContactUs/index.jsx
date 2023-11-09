@@ -36,7 +36,7 @@ function ContactUs() {
 
             {/**volunteer team section starts...................................................................... */}
             <section className='min-h-min'>
-                <div className='w-full sm:w-[80%] mx-auto pb-0 sm:pb-[5%] p-2'>
+                <div className='w-full sm:w-[80%] mx-auto pb-0 sm:pb-[5%] p-2 xl:max-w-7xl'>
                     <div className='max-w-lg pt-10'>
                         <h3 className='text-3xl'>Volunteer Team</h3>
                         <p className='text-start sm:text-justify text-base pb-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dolor eius porro rem odit officia 
@@ -99,7 +99,7 @@ function ContactUs() {
 
             {/**our donors map start...................................................................... */}
             <section className='min-h-min'>
-                <div className='w-full sm:w-[80%] mx-auto p-4'>
+                <div className='w-full sm:w-[80%] mx-auto p-4 xl:max-w-6xl'>
                     <div className='max-w-lg sm:pt-10 text-center mx-auto'>
                         <h3 className='text-3xl pb-2'>Our Donors</h3>
                         <p className=' text-base pb-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dolor eius porro rem odit officia 
@@ -113,7 +113,7 @@ function ContactUs() {
 
             {/**stay in contact section starts...................................................................... */}
             <section className='min-h-min'>
-                <div className='bg-[#FFF8F8] w-full sm:w-[80%] mx-auto pb-10 p-2'>
+                <div className='bg-[#FFF8F8] w-full sm:w-[80%] mx-auto pb-10 p-2 xl:max-w-6xl'>
                     <div className='max-w-lg pt-10 text-center mx-auto'>
                         <h3 className='text-3xl pb-2'>Connect with us.</h3>
                         <p className=' text-base pb-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dolor eius porro rem odit officia 

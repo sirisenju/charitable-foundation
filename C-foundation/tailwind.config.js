@@ -16,8 +16,14 @@ export default {
       },
       screens: {
         "xss": "420px",
+        "mlg": "1200px",
         "mxl": "1470px"
-      }
+      },
+      fontFamily: {
+        primaryfont: ["DM Sans"],
+        secfont: ["Zen Old Mincho"],
+        boldFont: ["Manrope"],
+      },
     },
   },
   plugins: [],

@@ -5,19 +5,19 @@ import HamburgerComponent from "./HamburgerComponent";
 
 function NavLinks() {
   return (
-    <section className="bg-nav-color">
-      <div className="w-full md:w-[90%] mx-auto flex justify-between ">
+    <section className="bg-nav-color/70">
+      <div className="w-full md:w-[90%] mx-auto flex justify-between xl:max-w-6xl">
       <div className="flex p-4">
-        <img src="src/assets/logo1.png" className="w-8 h-8" alt="" />
+        <img src="/assets/logo1.png" className="w-8 h-8" alt="" />
         <p className="pl-2 sm:hidden">The Royal Family Charitable Foundation</p>
-        <ul className="flex gap-x-6 items-center ml-20">
+        <ul className="flex gap-x-6 items-center ml-16">
           {navigation.map((item) => (
-            <li className="hidden sm:inline">
+            <li className="hidden sm:inline font-primaryfont text-base hover:underline">
               <NavLink
                 to={item.href}
                 key={item.id}
                 className={({ isActive }) =>
-                  isActive ? " " : " "
+                  isActive ? "" : " "
                 }
               >
                 {item.name}
@@ -28,7 +28,7 @@ function NavLinks() {
       </div>
       <div className="flex items-center">
         <ul className="flex gap-x-4 items-center">
-          <li className="hidden md:inline">+234 806 789 0957</li>
+          <li className="hidden lg:inline">+234 806 789 0957</li>
           <li className="hidden md:inline">
             <NavLink 
               to="/Donation"
