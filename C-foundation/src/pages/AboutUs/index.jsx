@@ -1,7 +1,8 @@
 import React from "react";
 import NavLinks from "../../components/NavLinks";
-import { FaGraduationCap, FaPlus } from "react-icons/fa";
+import { FaDonate, FaGraduationCap, FaHeadset, FaPeopleCarry, FaPlus, FaRibbon } from "react-icons/fa";
 import Footer from "../../components/Footer";
+import { NavLink } from "react-router-dom";
 
 function AboutUs() {
   return (
@@ -9,7 +10,7 @@ function AboutUs() {
       <NavLinks />
       {/**hero section starts..........................................................*/}
       <section className="w-full h-full bg-nav-color">
-        <div className="w-full sm:w-[80%] inline lg:flex relative lg:justify-center mx-auto pt-12 xl:max-w-6xl">
+        <div className="w-full sm:w-[80%] inline lg:flex relative lg:justify-center mx-auto pt-12 pb-12 xl:max-w-6xl">
           <div className="relative lg:order-last flex justify-center">
             <div className="h-[300px] w-full -rotate-45 bg-[#FFEEDD] absolute -right-28 -top-8 rounded-full hidden"></div>
             <img
@@ -38,11 +39,11 @@ function AboutUs() {
               </p>
               <button>More about us</button>
               <div className="max-w-md mt-4 max-[290px]:inline flex gap-x-2">
-                <div className="border-r-2 p-2">
+                <div className="border-r-2 border-black p-2">
                   4+ <br />
                   years experience
                 </div>
-                <div className="border-r-2 p-2">
+                <div className="border-r-2 border-black p-2">
                   1000+ <br />
                   Volunteers
                 </div>
@@ -65,41 +66,48 @@ function AboutUs() {
           alt=""
         />
         <div className="w-full min-h-min mx-auto relative xl:max-w-6xl">
-          <div className="max-w-sm mx-auto text-center pt-4 pb-4">
-            <p className=" text-xs pb-2">WHO WE ARE</p>
+          <div className="max-w-5xl text-center mx-auto pt-6">
+            <h2 className="text-lg font-bold pb-2">WHO WE ARE</h2>
+            <p className=" text-base">Founded in [Year] by [Founder's Name], The Royal Family Charitable Foundation began as a small group of dedicated individuals aimed at providing better 
+              living conditions and also oportunities for orphaned children. Today, we have grown into a recognized charity foundation with projects spanning across 
+              Nigeria. Our team, comprising passionate volunteers and experts, works tirelessly to bring about positive change.
+            </p>
+          </div>
+          <div className="max-w-3xl mx-auto text-center pt-4 pb-4">
             <h2 className=" text-xl font-bold pb-2">Make a Difference</h2>
             <p className=" text-base">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
-              magnam in veniam! Repudiandae, explicabo.
+              Making a difference is about the power of small actions leading to significant change. It's about the collective effort 
+              of individuals and communities working together to create a positive impact. Each act, no matter how small, 
+              contributes to a larger movement of change, inspiring hope and fostering a brighter future for all.
             </p>
           </div>
           <div className="w-full sm:w-[60%] lg:w-[80%] mx-auto p-4 grid place-items-center grid-cols-1 xss:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-8 mt-4">
-            <div className="bg-nav-color w-44 max-h-min text-center p-4 rounded-tl-3xl rounded-br-3xl shadow-md">
-              <FaGraduationCap size={50} className="mx-auto pb-2"/>
-              <h3 className="pb-2 font-bold">Free Access</h3>
+            <div className="bg-nav-color w-[90%] sm:w-48 max-h-min text-center p-4 rounded-tl-3xl rounded-br-3xl shadow-md">
+              <FaRibbon size={50} className="mx-auto pb-2"/>
+              <h3 className="pb-2 font-bold">Our Mission</h3>
               <p className="pb-2 ">
-                Lorem ipsum dolor sit amet consectetur adipisicing.
+                Join us today, help us touch children and shape their lives.
               </p>
             </div>
-            <div className="w-44 max-h-min bg-nav-color text-center p-4 rounded-tl-3xl rounded-br-3xl shadow-md">
-              <FaGraduationCap size={50} className="mx-auto pb-2" />
-              <h3 className="pb-2 font-bold">Free Access</h3>
+            <div className="w-[90%] sm:w-48 max-h-min bg-nav-color text-center p-4 rounded-tl-3xl rounded-br-3xl shadow-md">
+              <FaPeopleCarry size={50} className="mx-auto pb-2" />
+              <h3 className="pb-2 font-bold">Volunteer</h3>
               <p className="pb-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing.
+                Helping is more than just a thought, it is action. Join us today.
               </p>
             </div>
-            <div className="w-44 max-h-min bg-nav-color text-center p-4 rounded-tl-3xl rounded-br-3xl shadow-md">
-              <FaGraduationCap size={50} className="mx-auto pb-2" />
-              <h3 className="pb-2 font-bold">Free Access</h3>
+            <div className="w-[90%] sm:w-48 max-h-min bg-nav-color text-center p-4 rounded-tl-3xl rounded-br-3xl shadow-md">
+              <FaHeadset size={50} className="mx-auto pb-2" />
+              <h3 className="pb-2 font-bold">Help and Support</h3>
               <p className="pb-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing.
+                Contact our team of professionals and get in touch with us. 
               </p>
             </div>
-            <div className="w-44 max-h-min bg-nav-color text-center p-4 rounded-tl-3xl rounded-br-3xl shadow-md">
-              <FaGraduationCap size={50} className="mx-auto pb-2" />
-              <h3 className="pb-2 font-bold">Free Access</h3>
+            <div className="w-[90%] sm:w-48 max-h-min bg-nav-color text-center p-4 rounded-tl-3xl rounded-br-3xl shadow-md">
+              <FaDonate size={50} className="mx-auto pb-2" />
+              <h3 className="pb-2 font-bold">Donate</h3>
               <p className="pb-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing.
+                Support and contribute to our mission. 
               </p>
             </div>
           </div>
@@ -133,9 +141,9 @@ function AboutUs() {
                     Support our mission by donating a token today!
                   </h2>
                   <p className=" text-base pb-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quidem praesentium est laudantium cum illum numquam possimus
-                    voluptatem. Ex, perspiciatis deserunt!
+                    Every donation, big or small, makes a profound impact.
+                    When you donate to The Royal Family Charitable Foundation, you're not just giving money; you're giving hope, 
+                    opportunity, and support to those who need it most. 
                   </p>
                   <button className=" bg-[#FFD8BE] rounded-md shadow-md px-8 py-2">
                     Donate!
@@ -194,12 +202,12 @@ function AboutUs() {
       {/**campaings section starts..........................................................*/}
       <section className="min-h-max pb-10 bg-[#F8F7FF]">
         <div className="w-full p-4 md:w-[80%] mx-auto xl:max-w-6xl">
-          <div className=" max-w-md mx-auto text-center pt-10">
+          <div className=" max-w-2xl mx-auto text-center pt-10">
             <p className=" text-sm pb-2">projects we've done</p>
-            <h2 className=" text-2xl pb-2">Featured Campaings</h2>
+            <h2 className=" text-2xl pb-2">Featured Campaings.</h2>
             <p className=" text-lg pb-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-              molestiae rerum fugiat ex doloribus? Repellat modi harum nobis.
+              At The Royal Family Charitable foundation, we are constantly working on various campaigns that aim to address urgent needs and 
+              create lasting impacts in the communities we serve. Here are some of our current featured campaigns.
             </p>
           </div>
           <div className="w-full grid grid-cols-1 gap-x-4 gap-y-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -213,21 +221,22 @@ function AboutUs() {
                 <div className="flex justify-between pt-2 pb-2 shadow-md">
                   <div className="border-r-2 text-center w-full">
                     <p>Expenses</p>
-                    <p>10000000+</p>
+                    <p>100000+</p>
                   </div>
-                  <div className="border-r-2 text-center flex items-center justify-center w-full">
-                    <p>100%</p>
+                  <div className="border-r-2 text-center w-full">
+                    <p>Rate</p>
+                    <p>95%</p>
                   </div>
                   <div className="text-center w-full">
                     <p>Reach</p>
-                    <p>800+</p>
+                    <p>600+</p>
                   </div>
                 </div>
                 <div className="grid pt-4">
+                  <h3 className=" text-center font-bold pb-2 text-base">Orphanage Visitation.</h3>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Aliquid illo neque deserunt enim fugiat facere at
-                    reprehenderit qui quas quasi.
+                    This initiative focused on the orphaned children in the community. 
+                    With support, we provied food and new quality clothes to the children.
                   </p>
                   <div className="bg-red-200 w-9 h-9 place-self-end rounded-tl-2xl">
                     <FaPlus size={20} className="mx-auto mt-2" />
@@ -245,21 +254,22 @@ function AboutUs() {
                 <div className="flex justify-between pt-2 pb-2 shadow-md">
                   <div className="border-r-2 text-center w-full">
                     <p>Expenses</p>
-                    <p>10000000+</p>
+                    <p>100000+</p>
                   </div>
-                  <div className="border-r-2 text-center flex items-center justify-center w-full">
-                    <p>100%</p>
+                  <div className="border-r-2 text-center w-full">
+                    <p>Rate</p>
+                    <p>85%</p>
                   </div>
                   <div className="text-center w-full">
                     <p>Reach</p>
-                    <p>800+</p>
+                    <p>100+</p>
                   </div>
                 </div>
                 <div className="grid pt-4">
+                  <h3 className="text-center font-bold pb-2 text-base">Public School Visitation.</h3>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Aliquid illo neque deserunt enim fugiat facere at
-                    reprehenderit qui quas quasi.
+                    This initiative focused on the children of public school. With support, we provided books, 
+                    writting materials and other necessary tool to aid the children.
                   </p>
                   <div className="bg-red-200 w-9 h-9 place-self-end rounded-tl-2xl">
                     <FaPlus size={20} className="mx-auto mt-2" />
@@ -277,21 +287,22 @@ function AboutUs() {
                 <div className="flex justify-between pt-2 pb-2 shadow-md">
                   <div className="border-r-2 text-center w-full">
                     <p>Expenses</p>
-                    <p>10000000+</p>
+                    <p>100000+</p>
                   </div>
-                  <div className="border-r-2 text-center flex items-center justify-center w-full">
-                    <p>100%</p>
+                  <div className="border-r-2 text-center w-full">
+                    <p>Rate</p>
+                    <p>75%</p>
                   </div>
                   <div className="text-center w-full">
                     <p>Reach</p>
-                    <p>800+</p>
+                    <p>300+</p>
                   </div>
                 </div>
                 <div className="grid pt-4">
+                  <h3 className=" text-center font-bold pb-2 text-base">Childrens Hospital Visitation.</h3>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Aliquid illo neque deserunt enim fugiat facere at
-                    reprehenderit qui quas quasi.
+                    This initiative focused on the childrens hospital.
+                    Aligned with our sponsors, we were able to visit new mother and provide some assistance upon delivery.
                   </p>
                   <div className="bg-red-200 w-9 h-9 place-self-end rounded-tl-2xl">
                     <FaPlus size={20} className="mx-auto mt-2" />
@@ -313,21 +324,22 @@ function AboutUs() {
           </div>
           <div className="max-w-xl self-center min-h-min p-3">
             <h3 className="pb-3 text-sm">Volunteer</h3>
-            <p className="pb-3 text-3xl">Lorem ipsum, dolor sit amet <br />consectetur adipisicing elit.</p>
-            <p className=" pb-3 text-base">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-              Iure dolorum accusantium debitis voluptatibus. Unde deserunt fuga autem sequi harum cum?
+            <p className="pb-3 text-3xl">Create a new world with us.<br /> Be the change you  want to see.</p>
+            <p className=" pb-3 text-base">At The Royal Family Charitable Foundation, we believe that 
+              volunteers are the backbone of our efforts to bring about positive change.
             </p>
-            <button className="bg-blue-300 py-2 px-10 rounded-3xl">Join us</button>
+            <NavLink
+            to={"/contactUs"}
+            >
+              <button className="bg-blue-300 py-2 px-10 rounded-3xl">Join us</button>
+            </NavLink>
           </div>
         </div>
       </section>
       {/**become a volunteer section ends..........................................................*/}
 
-
       {/**the footer section starts..........................................................*/}
-      <section>
-        <Footer/>
-      </section>
+      <Footer/>
       {/**the footer section ends..........................................................*/}
     </main>
   );

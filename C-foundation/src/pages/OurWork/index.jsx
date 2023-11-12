@@ -10,14 +10,16 @@ function OurWork() {
             <section className='h-full bg-[#F8F7FF] pb-[6%]'>
                 <div className='w-full md:w-[90%] mx-auto sm:flex justify-between items-center max-w-5xl'>
                     <div className='w-full sm:max-w-xl p-2'>
-                        <p className='pb-3'>Our work</p>
-                        <h2 className='text-xl pb-3 font-semibold'>Lorem, ipsum dolor sit amet <br />consectetur adipisicing elit.</h2>
-                        <p className='text-base'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                            Repellendus culpa exercitationem doloremque, provident ab atque eveniet quod eligendi.
+                        <p className='pb-3'>Our Work at The Royal Family Charitable Foundation</p>
+                        <h2 className='text-xl pb-3 font-semibold'>Making a Tangible Impact Through Dedicated Initiatives</h2>
+                        <p className='text-base'>
+                            At The Royal Family Charitable Foundation, our work is driven by the commitment to create positive change in the lives of 
+                            children and communities. We focus on areas where we can make the most impact, aligning with our 
+                            mission to providing for humanity.
                         </p>
                     </div>
                     <div className='w-full bg-transparent p-2 sm:p-5'>
-                        <div className='h-[300px] sm:h-[300px]'>
+                        <div className='h-[300px] sm:h-[280px]'>
                             <img src="/assets/4-kids.jpg" className='sm:rounded-tr-[100px] sm:rounded-bl-[100px] h-full w-full object-cover' alt="" />
                         </div>
                         <div className='sm:flex sm:flex-wrap w-full sm:gap-x-4'>
@@ -38,8 +40,9 @@ function OurWork() {
                     <div className='w-full sm:w-[90%] min-h-min mx-auto pb-14 p-2 max-w-6xl'>
                         <div className='sm:w-[75%] mx-auto mb-4 pt-4 pb-4 text-white'>
                             <h3 className='text-xl pb-2'>Donate who Deserved</h3>
-                            <p className='text-base max-w-[500px]'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Voluptates modi assumenda possimus rem quas at itaque ipsum magnam voluptatum similique.
+                            <p className='text-base max-w-[500px]'>
+                                Your contributions, both big and small, are more than just donations — they are 
+                                investments in a brighter, more hopeful future.
                             </p>
                         </div>
                         <div className='w-full sm:w-[75%] mx-auto sm:p-14 relative'>
