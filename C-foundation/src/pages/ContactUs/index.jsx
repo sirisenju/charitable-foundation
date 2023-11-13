@@ -2,7 +2,6 @@ import React from 'react'
 import NavLinks from '../../components/NavLinks'
 import { FaFacebookSquare, FaInstagramSquare, FaTwitterSquare } from 'react-icons/fa'
 import Footer from '../../components/Footer'
-import Email from '../../components/Email'
 
 function ContactUs() {
     return (
@@ -11,13 +10,10 @@ function ContactUs() {
             {/**volunteer section starts...................................................................... */}
             <section className='min-h-max pb-10 sm:mt-10'>
                 <div className='w-full sm:w-[80%] mx-auto p-2 max-w-7xl'>
-                    <div className='max-w-4xl text-center mx-auto'>
+                    <div className='max-w-sm text-center mx-auto'>
                             <h3 className='font-semibold text-4xl pb-2'>Volunteers</h3>
-                            <p>Your Time and Skills Can Create a World of Difference
-                            </p>
-                            <p>At The Royal Family Charitable Foundaion, we believe that volunteers are the backbone of our efforts to bring about positive change. 
-                                Whether you can give a few hours a month or a more substantial commitment, your contribution is invaluable to 
-                                us and the communities we serve.
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Molestiae a esse quam at commodi iste!
                             </p>
                     </div>
                     <div>
@@ -26,12 +22,12 @@ function ContactUs() {
                         <img src="/assets/volunteer2.png" className='w-[570px] h-[450px] object-cover object-center' alt="" />
                     </div>
                     <div className='text-start sm:text-justify pt-4'>
-                        <h3 className='text-3xl font-semibold pb-2'>Become a volunteer today, become one of us.</h3>
-                        <ul className='list-disc sm:pl-10'>
-                            <li><span className=' font-bold text-lg'>Make an Impact:</span> Directly contribute to our projects and see the tangible results of your efforts.</li>
-                            <li><span className=' font-bold text-lg'>Gain Experience:</span> Develop new skills and gain experience in areas such as community development, education, healthcare, or environmental conservation.</li>
-                            <li><span className=' font-bold text-lg'>Connect with Community:</span> Join a network of passionate individuals dedicated to making a difference.</li>
-                        </ul>
+                        <h3 className=' text-3xl font-semibold pb-2'>Become a volunteer today, become one of us.</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel doloribus quas, cumque inventore numquam sunt explicabo 
+                            enim consectetur veritatis quis esse distinctio saepe repudiandae assumenda omnis obcaecati, iste expedita. 
+                            Nam praesentium iure fuga pariatur non numquam, tempore saepe repellat! Ut perspiciatis aspernatur enim, ipsam, molestias 
+                            odio quis cupiditate totam illo quae laborum, ab et doloribus error itaque. Eveniet, voluptatum dolor!
+                        </p>
                     </div>
                 </div>
                 </div>
@@ -41,13 +37,10 @@ function ContactUs() {
             {/**volunteer team section starts...................................................................... */}
             <section className='min-h-min'>
                 <div className='w-full sm:w-[80%] mx-auto pb-0 sm:pb-[5%] p-2 xl:max-w-7xl'>
-                    <div className='max-w-2xl pt-10'>
-                        <h3 className='text-3xl'>
-                        Our Volunteer Team - The Heart of Our Foundation.</h3>
-                        <p className='text-start sm:text-justify text-base pb-5'>
-                            Our volunteer team at The Royal Family Charitable Foundation is a vibrant and diverse group of individuals 
-                            who share a common goal: to make a positive impact in the lives of others. They are the driving 
-                            force behind our projects, bringing enthusiasm, skills, and a deep commitment to our mission.
+                    <div className='max-w-lg pt-10'>
+                        <h3 className='text-3xl'>Volunteer Team</h3>
+                        <p className='text-start sm:text-justify text-base pb-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dolor eius porro rem odit officia 
+                            aliquam necessitatibus magni, incidunt maiores? Eos, sed qui eveniet maxime est modi assumenda?
                         </p>
                     </div>
                     <div className='block sm:flex sm:flex-wrap h-full justify-between'>
@@ -107,12 +100,10 @@ function ContactUs() {
             {/**our donors map start...................................................................... */}
             <section className='min-h-min'>
                 <div className='w-full sm:w-[80%] mx-auto p-4 xl:max-w-6xl'>
-                    <div className='max-w-3xl sm:pt-10 text-center mx-auto'>
+                    <div className='max-w-lg sm:pt-10 text-center mx-auto'>
                         <h3 className='text-3xl pb-2'>Our Donors</h3>
-                        <p className=' text-base pb-5'>We are immensely grateful to our donors whose generosity is the cornerstone 
-                        of our efforts at The Royal Family Charitable Foundation. Your contributions empower us to make real change, impacting lives 
-                        across communities. Every donation, big or small, is a step towards a brighter future. Thank you for believing
-                         in our mission and joining us in this journey of hope and transformation.
+                        <p className=' text-base pb-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dolor eius porro rem odit officia 
+                            aliquam necessitatibus magni, incidunt maiores? Eos, sed qui eveniet maxime est modi assumenda?
                         </p>
                     </div>
                     <img src="/assets/Donor-Map.png" className='object-center object-contain h-full w-full' alt="" />
@@ -123,15 +114,29 @@ function ContactUs() {
             {/**stay in contact section starts...................................................................... */}
             <section className='min-h-min'>
                 <div className='bg-[#FFF8F8] w-full sm:w-[80%] mx-auto pb-10 p-2 xl:max-w-6xl'>
-                    <div className='max-w-4xl pt-10 text-center mx-auto'>
+                    <div className='max-w-lg pt-10 text-center mx-auto'>
                         <h3 className='text-3xl pb-2'>Connect with us.</h3>
-                        <p className=' text-base pb-5'>We welcome your inquiries, suggestions, and support at The Royal Family Charitable Foundation. 
-                        Please feel free to reach out to us using the form below. Whether you have questions, need more information, 
-                        or want to get involved, we're here to listen and respond. Your input is valuable to us, and we look forward 
-                        to hearing from you.
+                        <p className=' text-base pb-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dolor eius porro rem odit officia 
+                            aliquam necessitatibus magni, incidunt maiores? Eos, sed qui eveniet maxime est modi assumenda?
                         </p>
                     </div>
-                    <Email/>
+                    <div className='max-w-3xl mx-auto pt-7'>
+                        <form action="" className=''>
+                            <div className='flex gap-x-4 text-[#7F7F7F] max-[390px]:inline'>
+                                <input type="text"  placeholder='First name' className='max-[390px]:w-full w-[50%] p-3 h-12 mb-4 outline-none rounded-3xl bg-transparent border-2 border-[#7F7F7F]'/>
+                                <input type="text"  placeholder='Email' className='max-[390px]:w-full w-[50%] p-3 h-12 mb-4 outline-none rounded-3xl bg-transparent border-2 border-[#7F7F7F]'/>
+                            </div>
+                            <div className='flex gap-x-4 text-[#7F7F7F] max-[390px]:inline'>
+                                <input type="text"  placeholder='Phone' className='max-[390px]:w-full w-[50%] p-3 h-12 mb-4 outline-none rounded-3xl bg-transparent border-2 border-[#7F7F7F]'/>
+                                <input type="text"  placeholder='Subject' className='max-[390px]:w-full w-[50%] p-3 h-12 mb-4 outline-none rounded-3xl bg-transparent border-2 border-[#7F7F7F]'/>
+                            </div>
+                            <textarea name="" placeholder='Message' id="" className=' w-full h-28 p-3 outline-none rounded-3xl bg-transparent border-2 border-[#7F7F7F]'>
+                            </textarea>
+                        </form>
+                        <div className=' w-full flex justify-center pt-4'>
+                            <button className='bg-green-200 py-2 px-10 rounded-3xl self-center'>Send</button>
+                        </div>
+                    </div>
                 </div>
             </section>
             {/**stay in contact section ends...................................................................... */}
