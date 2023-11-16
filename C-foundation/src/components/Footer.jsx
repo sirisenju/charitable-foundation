@@ -3,7 +3,7 @@ import { FaChevronRight, FaEnvelope, FaEnvelopeSquare, FaFacebook, FaFacebookSqu
 
 function Footer() {
     return (
-        <section className='min-h-min bg-[#eee3d8] pb-[6%] pt-[6%] xl:pb-[2%] xl:pt-[2%]'>
+        <section className='min-h-min bg-[#2c2c2c]/90 pb-[6%] pt-[6%] xl:pb-[2%] xl:pt-[2%] text-white'>
             <div className='w-full md:w-[80%] grid grid-cols-1 sm:grid-cols-2 mx-auto h-[40%] xl:max-w-6xl'>
                 <div className='max-w-lg p-4'>
                     <div className='flex items-center pb-3'>

@@ -25,10 +25,10 @@ function HamburgerComponent() {
             size={32}
             rounded
             distance="sm"
-            color="black"
+            color="white"
             />
             {isOpen && (
-              <div className="fixed z-10 hamburger-style h-full w-[75%] top-0 left-0 bg-[#2c2c2c] p-4">
+              <div className="fixed z-10 hamburger-style h-full w-[75%] top-0 left-0 bg-[#C5BAAA] p-4">
                 <div className='flex gap-x-2'>
                   <img src="/assets/logo1.png" className=' h-12 w-12' alt="" />
                   <p className='text-white'>The Royal Family Charitable Foundation</p>
@@ -40,8 +40,8 @@ function HamburgerComponent() {
                     key={item.id}
                     className={({ isActive }) => {
                       return (
-                        "hover:text-slate-600 hover:scale-110 transition ease-in delay-75 border-b-white border-b-2" +
-                        (isActive ? " text-white" : " text-yellow-200")
+                        "hover:text-slate-600 hover:scale-110 text-lg transition ease-in delay-75 border-b-[#806D61] border-b-2" +
+                        (isActive ? " text-white" : " text-[#2C2C2C]")
                       );
                     }}
                     >
@@ -49,12 +49,12 @@ function HamburgerComponent() {
                     </NavLink>
                   ))
                   }
-                  <p className='italic text-lg font-semibold pt-4'>The joy is in giving</p>
+                  <p className='italic text-2xl font-semibold pt-4'>The joy is in giving</p>
                 </div>
-                <div className=' w-full'>
+                <div className='w-full'>
                   <NavLink 
                   to={"/donation"}>
-                    <button className='px-11 py-2 bg-yellow-400 rounded-lg'>Donate</button>
+                    <button className='px-11 py-2 bg-yellow-500 rounded-lg font-boldFont'>Donate</button>
                   </NavLink>
                 </div>
               </div>

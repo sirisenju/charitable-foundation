@@ -5,8 +5,8 @@ import HamburgerComponent from "./HamburgerComponent";
 
 function NavLinks() {
   return (
-    <section className="bg-nav-color/70">
-      <div className="w-full md:w-[90%] mx-auto flex justify-between xl:max-w-6xl">
+    <section className="bg-[#2c2c2c]/90">
+      <div className="w-full md:w-[90%] text-white mx-auto flex justify-between xl:max-w-6xl">
       <div className="flex p-4">
         <img src="/assets/logo1.png" className="w-8 h-8" alt="" />
         <p className="pl-2 sm:hidden">The Royal Family Charitable Foundation</p>
@@ -32,7 +32,7 @@ function NavLinks() {
           <li className="hidden md:inline">
             <NavLink 
               to="/Donation"
-              className={({ isActive }) => isActive ? "bg-[#b8aaa1] rounded-3xl px-6 py-2" : "bg-[#FFD8BE] rounded-3xl px-6 py-2"}>
+              className={({ isActive }) => isActive ? "bg-[#b8aaa1] rounded-3xl px-6 py-2" : "bg-[#c5baaa]/30  rounded-3xl px-6 py-2"}>
                 Donate
             </NavLink>
           </li>

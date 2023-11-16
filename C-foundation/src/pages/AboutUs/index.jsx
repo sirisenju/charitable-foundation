@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 function AboutUs() {
   return (
     <main>
-      <NavLinks />
+        <NavLinks />
       {/**hero section starts..........................................................*/}
       <section className="w-full h-full bg-nav-color">
         <div className="w-full sm:w-[80%] inline lg:flex relative lg:justify-center mx-auto pt-12 pb-12 xl:max-w-6xl">
@@ -83,7 +83,7 @@ function AboutUs() {
             </p>
           </div>
           <div className="w-full sm:w-[60%] lg:w-[80%] mx-auto p-4 grid place-items-center grid-cols-1 xss:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-8 mt-2">
-            <div className="bg-nav-color w-full max-h-min text-center p-2 rounded-tl-3xl rounded-br-3xl shadow-md">
+            <div className="bg-[#2c2c2c]/90 text-white w-full max-h-min text-center p-2 rounded-tl-3xl rounded-br-3xl shadow-md">
               <FaRibbon size={50} className="mx-auto"/>
               <h3 className="pb-2 font-bold pt-2">Our Mission</h3>
               <p className="pb-2 ">
@@ -91,21 +91,21 @@ function AboutUs() {
                 vulnerable children can feel empowered.
               </p>
             </div>
-            <div className="w-full max-h-min bg-nav-color text-center p-2 rounded-tl-3xl rounded-br-3xl shadow-md">
+            <div className="w-full max-h-min bg-[#2c2c2c]/90 text-white text-center p-2 rounded-tl-3xl rounded-br-3xl shadow-md">
               <FaPeopleCarry size={50} className="mx-auto" />
               <h3 className="pb-2 font-bold pt-2">Volunteer</h3>
               <p className="pb-2">
                 We need your help to make a difference for the kids in the community, touch lives one child at a time.
               </p>
             </div>
-            <div className="w-full max-h-min bg-nav-color text-center p-2 rounded-tl-3xl rounded-br-3xl shadow-md">
+            <div className="w-full max-h-min bg-[#2c2c2c]/90 text-white text-center p-2 rounded-tl-3xl rounded-br-3xl shadow-md">
               <FaHeadset size={50} className="mx-auto" />
               <h3 className="pb-2 font-bold pt-2">Help and Support</h3>
               <p className="pb-2">
                 Your help and support mean the world to us! Your contribution makes a significant impact. Join us today. 
               </p>
             </div>
-            <div className="w-full max-h-min bg-nav-color text-center p-2 rounded-tl-3xl rounded-br-3xl shadow-md">
+            <div className="w-full max-h-min bg-[#2c2c2c]/90 text-white text-center p-2 rounded-tl-3xl rounded-br-3xl shadow-md">
               <FaDonate size={50} className="mx-auto" />
               <h3 className="pb-2 font-bold pt-2">Donate</h3>
               <p className="pb-2">
@@ -195,7 +195,7 @@ function AboutUs() {
             </p>
           </div>
           <div className="w-full grid grid-cols-1 gap-x-4 gap-y-4 sm:grid-cols-2 lg:grid-cols-3">
-            <div className="max-w-xs min-h-max mx-auto bg-yellow-50 shadow-md rounded-tr-3xl mb-5 sm:mb-0">
+            <div className="max-w-xs min-h-max mx-auto bg-nav-color shadow-md rounded-tr-3xl mb-5 sm:mb-0">
               <img
                 src="/assets/4-kids.jpg"
                 className="rounded-tr-3xl rounded-bl-3xl"
@@ -218,18 +218,18 @@ function AboutUs() {
                 </div>
                 <div className="grid pt-4">
                   <h3 className="font-semibold text-lg">Orphanage Visitation</h3>
-                  <p>
+                  <p className="text-base">
                     Our orphanage visitation campaign aims to bring joy and companionship 
                     to children in need. We believe in creating positive and memorable experiences 
                     for orphaned children, fostering a sense of belonging and support.
                   </p>
-                  <div className="bg-red-200 w-9 h-9 place-self-end rounded-tl-2xl">
-                    <FaPlus size={20} className="mx-auto mt-2" />
+                  <div className="bg-white w-9 h-9 place-self-end rounded-tl-2xl">
+                    <FaPlus color="black" size={20} className="mx-auto mt-2" />
                   </div>
                 </div>
               </div>
             </div>
-            <div className="max-w-xs min-h-max mx-auto bg-yellow-50 shadow-md rounded-tr-3xl mb-5 sm:mb-0">
+            <div className="max-w-xs min-h-max mx-auto bg-nav-color shadow-md rounded-tr-3xl mb-5 sm:mb-0">
               <img
                 src="/assets/4-kids.jpg"
                 className="rounded-tr-3xl rounded-bl-3xl"
@@ -252,18 +252,18 @@ function AboutUs() {
                 </div>
                 <div className="grid pt-4">
                   <h3 className="font-semibold text-lg">Children Hospital Visitation</h3>
-                  <p>
+                  <p className="text-base">
                     The children's hospital visitation campaign is designed to bring comfort and 
                     cheer to young patients facing medical challenges. Our goal is to alleviate the 
                     stress of hospitalization and create moments of joy for both the children and their families.
                   </p>
-                  <div className="bg-red-200 w-9 h-9 place-self-end rounded-tl-2xl">
+                  <div className="bg-white w-9 h-9 place-self-end rounded-tl-2xl">
                     <FaPlus size={20} className="mx-auto mt-2" />
                   </div>
                 </div>
               </div>
             </div>
-            <div className="max-w-xs min-h-max mx-auto bg-yellow-50 shadow-md rounded-tr-3xl mb-5 sm:mb-0">
+            <div className="max-w-xs min-h-max mx-auto bg-nav-color shadow-md rounded-tr-3xl mb-5 sm:mb-0">
               <img
                 src="/assets/4-kids.jpg"
                 className="rounded-tr-3xl rounded-bl-3xl"
@@ -286,12 +286,12 @@ function AboutUs() {
                 </div>
                 <div className="grid pt-4">
                   <h3 className="font-semibold text-lg">Public School Visitation</h3>
-                  <p>
+                  <p className="text-base">
                     The public school visitation campaign focuses on supporting educational initiatives 
                     in underprivileged communities. We believe in the transformative power of education 
                     and strive to enhance the learning environment for children in public schools
                   </p>
-                  <div className="bg-red-200 w-9 h-9 place-self-end rounded-tl-2xl">
+                  <div className="bg-white w-9 h-9 place-self-end rounded-tl-2xl">
                     <FaPlus size={20} className="mx-auto mt-2" />
                   </div>
                 </div>
@@ -303,7 +303,7 @@ function AboutUs() {
       {/**campaings section ends..........................................................*/}
 
       {/**become a volunteer section starts..........................................................*/}
-      <section className=" min-h-min bg-[#FFD8BE] py-8">
+      <section className=" min-h-min bg-nav-color py-8">
         <p className=" text-center pb-6">An open invite. Come serve the community with us!</p>
         <div className="w-full sm:w-[80%] mx-auto sm:flex h-auto p-2 xl:max-w-6xl">
           <div className="w-full sm:order-last">
@@ -316,7 +316,7 @@ function AboutUs() {
               touching the lives of not only the children we serve but also the communities we are a part of.
             </p>
             <NavLink to={"/contactUs"}>
-              <button className="bg-blue-300 py-2 px-10 rounded-3xl">Join us</button>
+              <button className="bg-[#2c2c2c]/30 text-white py-2 px-10 rounded-3xl">Join us</button>
             </NavLink>
           </div>
         </div>

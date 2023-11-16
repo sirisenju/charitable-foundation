@@ -55,7 +55,7 @@ function OurWork() {
       {/**hero section for our work.........................................................*/}
 
       {/**seccond section starts for our work.........................................................*/}
-      <section className="h-full bg-[#425F57]">
+      <section className="h-full bg-[#2c2c2c]/90">
         <div className="w-full sm:w-[90%] min-h-min mx-auto pb-14 p-2 max-w-6xl">
           <div className="sm:w-[75%] mx-auto mb-4 pt-4 pb-4 text-white">
             <h3 className="text-xl font-semibold pb-2">Donate who Deserved</h3>
@@ -72,7 +72,7 @@ function OurWork() {
               className="h-[600px] object-center mx-auto hidden sm:block"
               alt=""
             />
-            <div className="h-auto w-full sm:max-w-md sm:absolute bg-[#526F67]/50 rounded-lg backdrop-blur-xl bg-opacity-50 shadow-lg top-0 left-[10%] p-2 flex flex-wrap mb-4">
+            <div className="h-auto w-full sm:max-w-md sm:absolute bg-[#2c2c2c]/70 rounded-lg backdrop-blur-xl bg-opacity-50 shadow-lg top-0 left-[10%] p-2 flex flex-wrap mb-4">
               <img
                 src="/assets/simple-smile.jpg"
                 className=" object-cover h-28 w-28 relative"
@@ -85,13 +85,13 @@ function OurWork() {
                   Dream: To become a doctor
                 </p>
                 <NavLink to={"/donation"}>
-                  <button className="bg-yellow-300  px-7 py-1 rounded-lg">
+                  <button className="bg-[#c5baaa]/30 px-7 py-1 rounded-lg">
                     Donate
                   </button>
                 </NavLink>
               </div>
             </div>
-            <div className="min-h-min w-full sm:max-w-sm sm:absolute p-2 bg-[#526F67]/50 rounded-lg backdrop-blur-xl bg-opacity-50 shadow-lg top-[23%] -right-[18%] flex flex-wrap mb-4">
+            <div className="min-h-min w-full sm:max-w-sm sm:absolute p-2 bg-[#2c2c2c]/70 rounded-lg backdrop-blur-xl bg-opacity-50 shadow-lg top-[23%] -right-[18%] flex flex-wrap mb-4">
               <img
                 src="/assets/simple-smile.jpg"
                 className=" object-cover h-28 w-28 relative"
@@ -104,13 +104,13 @@ function OurWork() {
                   Dream: To become a doctor
                 </p>
                 <NavLink to={"/donation"}>
-                  <button className="bg-yellow-300 px-7 py-1 rounded-lg">
+                  <button className="bg-[#c5baaa]/30  px-7 py-1 rounded-lg">
                     Donate
                   </button>
                 </NavLink>
               </div>
             </div>
-            <div className="h-auto w-full sm:max-w-sm p-2 sm:absolute bg-[#526F67]/50 rounded-lg backdrop-blur-xl bg-opacity-50 shadow-lg top-[43%] -left-[10%] flex flex-wrap mb-4">
+            <div className="h-auto w-full sm:max-w-sm p-2 sm:absolute bg-[#2c2c2c]/70 rounded-lg backdrop-blur-xl bg-opacity-50 shadow-lg top-[43%] -left-[10%] flex flex-wrap mb-4">
               <img
                 src="/assets/simple-smile.jpg"
                 className=" object-cover h-28 w-28 relative"
@@ -123,13 +123,13 @@ function OurWork() {
                   Dream: To become a doctor
                 </p>
                 <NavLink to={"/donation"}>
-                  <button className="bg-yellow-300 px-7 py-1 rounded-lg">
+                  <button className="bg-[#c5baaa]/30  px-7 py-1 rounded-lg">
                     Donate
                   </button>
                 </NavLink>
               </div>
             </div>
-            <div className="h-auto w-full sm:max-w-sm p-2 sm:absolute bg-[#526F67]/50 rounded-lg backdrop-blur-xl bg-opacity-50 shadow-lg  bottom-[13%] right-[3%] flex flex-wrap mb-4">
+            <div className="h-auto w-full sm:max-w-sm p-2 sm:absolute bg-[#2c2c2c]/70 rounded-lg backdrop-blur-xl bg-opacity-50 shadow-lg  bottom-[13%] right-[3%] flex flex-wrap mb-4">
               <img
                 src="/assets/simple-smile.jpg"
                 className=" object-cover h-28 w-28"
@@ -142,13 +142,13 @@ function OurWork() {
                   Dream: To become a doctor
                 </p>
                 <NavLink to={"/donation"}>
-                  <button className="bg-yellow-300 px-7 py-1 rounded-lg">
+                  <button className="bg-[#c5baaa]/30  px-7 py-1 rounded-lg">
                     Donate
                   </button>
                 </NavLink>
               </div>
             </div>
-            <div className="h-auto w-full sm:max-w-sm p-2 sm:absolute bg-[#526F67]/50 rounded-lg backdrop-blur-xl bg-opacity-50 shadow-lg -bottom-[5%] -left-[8%] flex flex-wrap">
+            <div className="h-auto w-full sm:max-w-sm p-2 sm:absolute bg-[#2c2c2c]/70 rounded-lg backdrop-blur-xl bg-opacity-50 shadow-lg -bottom-[5%] -left-[8%] flex flex-wrap">
               <img
                 src="/assets/simple-smile.jpg"
                 className=" object-cover h-28 w-28"
@@ -161,7 +161,7 @@ function OurWork() {
                   Dream: To become a doctor
                 </p>
                 <NavLink to={"/donation"}>
-                  <button className=" bg-yellow-300 px-7 py-1 rounded-lg">
+                  <button className=" bg-[#c5baaa]/30 px-7 py-1 rounded-lg">
                     Donate
                   </button>
                 </NavLink>
