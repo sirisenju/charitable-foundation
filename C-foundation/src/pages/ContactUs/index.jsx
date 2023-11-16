@@ -148,7 +148,7 @@ function ContactUs() {
                             </textarea>
                         </form>
                         <div className=' w-full flex justify-center pt-4'>
-                            <button className='bg-[#c5baaa]/30  py-2 px-10 rounded-3xl self-center'>Send</button>
+                            <button className='bg-[#C5bAAA]/30  py-2 px-10 rounded-3xl self-center'>Send</button>
                         </div>
                     </div>
                 </div>

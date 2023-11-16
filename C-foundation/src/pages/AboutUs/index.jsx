@@ -83,7 +83,7 @@ function AboutUs() {
             </p>
           </div>
           <div className="w-full sm:w-[60%] lg:w-[80%] mx-auto p-4 grid place-items-center grid-cols-1 xss:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-8 mt-2">
-            <div className="bg-[#2c2c2c]/90 text-white w-full max-h-min text-center p-2 rounded-tl-3xl rounded-br-3xl shadow-md">
+            <div className="bg-[#2C2C2C]/90 text-white w-full max-h-min text-center p-2 rounded-tl-3xl rounded-br-3xl shadow-md">
               <FaRibbon size={50} className="mx-auto"/>
               <h3 className="pb-2 font-bold pt-2">Our Mission</h3>
               <p className="pb-2 ">
@@ -91,21 +91,21 @@ function AboutUs() {
                 vulnerable children can feel empowered.
               </p>
             </div>
-            <div className="w-full max-h-min bg-[#2c2c2c]/90 text-white text-center p-2 rounded-tl-3xl rounded-br-3xl shadow-md">
+            <div className="w-full max-h-min bg-[#2C2C2C]/90 text-white text-center p-2 rounded-tl-3xl rounded-br-3xl shadow-md">
               <FaPeopleCarry size={50} className="mx-auto" />
               <h3 className="pb-2 font-bold pt-2">Volunteer</h3>
               <p className="pb-2">
                 We need your help to make a difference for the kids in the community, touch lives one child at a time.
               </p>
             </div>
-            <div className="w-full max-h-min bg-[#2c2c2c]/90 text-white text-center p-2 rounded-tl-3xl rounded-br-3xl shadow-md">
+            <div className="w-full max-h-min bg-[#2C2C2C]/90 text-white text-center p-2 rounded-tl-3xl rounded-br-3xl shadow-md">
               <FaHeadset size={50} className="mx-auto" />
               <h3 className="pb-2 font-bold pt-2">Help and Support</h3>
               <p className="pb-2">
                 Your help and support mean the world to us! Your contribution makes a significant impact. Join us today. 
               </p>
             </div>
-            <div className="w-full max-h-min bg-[#2c2c2c]/90 text-white text-center p-2 rounded-tl-3xl rounded-br-3xl shadow-md">
+            <div className="w-full max-h-min bg-[#2C2C2C]/90 text-white text-center p-2 rounded-tl-3xl rounded-br-3xl shadow-md">
               <FaDonate size={50} className="mx-auto" />
               <h3 className="pb-2 font-bold pt-2">Donate</h3>
               <p className="pb-2">
@@ -316,7 +316,7 @@ function AboutUs() {
               touching the lives of not only the children we serve but also the communities we are a part of.
             </p>
             <NavLink to={"/contactUs"}>
-              <button className="bg-[#2c2c2c]/30 text-white py-2 px-10 rounded-3xl">Join us</button>
+              <button className="bg-[#2C2C2C]/30 text-white py-2 px-10 rounded-3xl">Join us</button>
             </NavLink>
           </div>
         </div>

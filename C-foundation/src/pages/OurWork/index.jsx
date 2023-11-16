@@ -55,7 +55,7 @@ function OurWork() {
       {/**hero section for our work.........................................................*/}
 
       {/**seccond section starts for our work.........................................................*/}
-      <section className="h-full bg-[#2c2c2c]/90">
+      <section className="h-full bg-[#2C2C2C]/90">
         <div className="w-full sm:w-[90%] min-h-min mx-auto pb-14 p-2 max-w-6xl">
           <div className="sm:w-[75%] mx-auto mb-4 pt-4 pb-4 text-white">
             <h3 className="text-xl font-semibold pb-2">Donate who Deserved</h3>
@@ -85,7 +85,7 @@ function OurWork() {
                   Dream: To become a doctor
                 </p>
                 <NavLink to={"/donation"}>
-                  <button className="bg-[#c5baaa]/30 px-7 py-1 rounded-lg">
+                  <button className="bg-[#C5bAAA]/30 px-7 py-1 rounded-lg">
                     Donate
                   </button>
                 </NavLink>
@@ -104,7 +104,7 @@ function OurWork() {
                   Dream: To become a doctor
                 </p>
                 <NavLink to={"/donation"}>
-                  <button className="bg-[#c5baaa]/30  px-7 py-1 rounded-lg">
+                  <button className="bg-[#C5bAAA]/30  px-7 py-1 rounded-lg">
                     Donate
                   </button>
                 </NavLink>
@@ -123,7 +123,7 @@ function OurWork() {
                   Dream: To become a doctor
                 </p>
                 <NavLink to={"/donation"}>
-                  <button className="bg-[#c5baaa]/30  px-7 py-1 rounded-lg">
+                  <button className="bg-[#C5bAAA]/30  px-7 py-1 rounded-lg">
                     Donate
                   </button>
                 </NavLink>
@@ -142,7 +142,7 @@ function OurWork() {
                   Dream: To become a doctor
                 </p>
                 <NavLink to={"/donation"}>
-                  <button className="bg-[#c5baaa]/30  px-7 py-1 rounded-lg">
+                  <button className="bg-[#C5bAAA]/30  px-7 py-1 rounded-lg">
                     Donate
                   </button>
                 </NavLink>
@@ -161,7 +161,7 @@ function OurWork() {
                   Dream: To become a doctor
                 </p>
                 <NavLink to={"/donation"}>
-                  <button className=" bg-[#c5baaa]/30 px-7 py-1 rounded-lg">
+                  <button className=" bg-[#C5bAAA]/30 px-7 py-1 rounded-lg">
                     Donate
                   </button>
                 </NavLink>
