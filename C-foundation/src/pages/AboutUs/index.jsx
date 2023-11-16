@@ -2,6 +2,7 @@ import React from "react";
 import NavLinks from "../../components/NavLinks";
 import { FaDonate, FaHeadset, FaPeopleCarry, FaPlus, FaRibbon } from "react-icons/fa";
 import Footer from "../../components/Footer";
+import { NavLink } from "react-router-dom";
 
 function AboutUs() {
   return (
@@ -159,36 +160,19 @@ function AboutUs() {
                 />
               </div>
               <div className="w-full sm:w-[50%] flex items-center pt-4">
-                <div className="max-w-lg sm:p-6">
+                <div className="max-w-lg sm:p-4">
                   <p className="text-sm">Support Us</p>
-                  <h2 className=" text-xl">
+                  <h2 className="text-xl pb-2">
                     Let us create something great together!
                   </h2>
                   <div className="max-w-md text-black">
-                    <form action="">
-                      <div className="flex gap-x-4 pb-6 pt-4 h-[80px]">
-                        <input
-                          type="text"
-                          placeholder="full name"
-                          className="w-full pl-2 bg-[#F8F7FF] rounded-md shadow-md"
-                        />
-                        <input
-                          type="text"
-                          placeholder="email"
-                          className="w-full pl-2 bg-[#F8F7FF] rounded-md shadow-md"
-                        />
-                      </div>
-                      <textarea
-                        name=""
-                        id=""
-                        placeholder="your message"
-                        rows={6}
-                        className="w-full mb-4 pl-2 pt-2 bg-[#F8F7FF] rounded-md shadow-md"
-                      ></textarea>
-                      <button className="bg-[#FFD8BE] w-full pt-3 pb-3 shadow-md">
-                        Send Us
-                      </button>
-                    </form>
+                    <p className="text-justify">At The Royal Family Charitable Foundation, our mission is to ignite the flame of hope in the hearts of young children, 
+                      providing them with a pathway to a brighter tomorrow. We are dedicated to cultivating a nurturing 
+                      environment that empowers each child to dream, learn, and grow, ensuring that they have the tools and 
+                      support needed to overcome challenges and embrace a future full of promise. Through unwavering commitment 
+                      and compassion, we strive to be beacons of inspiration, fostering resilience, curiosity, and a sense of 
+                      possibility in the minds of the next generation.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -219,23 +203,25 @@ function AboutUs() {
               />
               <div className="p-4">
                 <div className="flex justify-between pt-2 pb-2 shadow-md">
-                  <div className="border-r-2 text-center w-full">
+                  <div className="border-r-2 border-black text-center w-full sm:p-2">
                     <p>Expenses</p>
-                    <p>10000000+</p>
+                    <p>100000+</p>
                   </div>
-                  <div className="border-r-2 text-center flex items-center justify-center w-full">
+                  <div className="border-r-2 border-black text-center w-full sm:p-2">
+                    <p>Rate</p>
                     <p>100%</p>
                   </div>
-                  <div className="text-center w-full">
+                  <div className="text-center w-full sm:p-2">
                     <p>Reach</p>
                     <p>800+</p>
                   </div>
                 </div>
                 <div className="grid pt-4">
+                  <h3 className="font-semibold text-lg">Orphanage Visitation</h3>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Aliquid illo neque deserunt enim fugiat facere at
-                    reprehenderit qui quas quasi.
+                    Our orphanage visitation campaign aims to bring joy and companionship 
+                    to children in need. We believe in creating positive and memorable experiences 
+                    for orphaned children, fostering a sense of belonging and support.
                   </p>
                   <div className="bg-red-200 w-9 h-9 place-self-end rounded-tl-2xl">
                     <FaPlus size={20} className="mx-auto mt-2" />
@@ -251,23 +237,25 @@ function AboutUs() {
               />
               <div className="p-4">
                 <div className="flex justify-between pt-2 pb-2 shadow-md">
-                  <div className="border-r-2 text-center w-full">
+                  <div className="border-r-2 border-black text-center w-full sm:p-2">
                     <p>Expenses</p>
                     <p>10000000+</p>
                   </div>
-                  <div className="border-r-2 text-center flex items-center justify-center w-full">
+                  <div className="border-r-2 border-black text-center w-full sm:p-2">
+                    <p>Rate</p>
                     <p>100%</p>
                   </div>
-                  <div className="text-center w-full">
+                  <div className="text-center w-full sm:p-2">
                     <p>Reach</p>
                     <p>800+</p>
                   </div>
                 </div>
                 <div className="grid pt-4">
+                  <h3 className="font-semibold text-lg">Children Hospital Visitation</h3>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Aliquid illo neque deserunt enim fugiat facere at
-                    reprehenderit qui quas quasi.
+                    The children's hospital visitation campaign is designed to bring comfort and 
+                    cheer to young patients facing medical challenges. Our goal is to alleviate the 
+                    stress of hospitalization and create moments of joy for both the children and their families.
                   </p>
                   <div className="bg-red-200 w-9 h-9 place-self-end rounded-tl-2xl">
                     <FaPlus size={20} className="mx-auto mt-2" />
@@ -283,23 +271,25 @@ function AboutUs() {
               />
               <div className="p-4">
                 <div className="flex justify-between pt-2 pb-2 shadow-md">
-                  <div className="border-r-2 text-center w-full">
-                    <p>Expenses</p>
+                  <div className="border-r-2 border-black text-center w-full sm:p-2">
+                    <p >Expenses</p>
                     <p>10000000+</p>
                   </div>
-                  <div className="border-r-2 text-center flex items-center justify-center w-full">
+                  <div className="border-r-2 border-black text-center w-full sm:p-2">
+                    <p>Rate</p>
                     <p>100%</p>
                   </div>
-                  <div className="text-center w-full">
+                  <div className="text-center w-full sm:p-2">
                     <p>Reach</p>
                     <p>800+</p>
                   </div>
                 </div>
                 <div className="grid pt-4">
+                  <h3 className="font-semibold text-lg">Public School Visitation</h3>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Aliquid illo neque deserunt enim fugiat facere at
-                    reprehenderit qui quas quasi.
+                    The public school visitation campaign focuses on supporting educational initiatives 
+                    in underprivileged communities. We believe in the transformative power of education 
+                    and strive to enhance the learning environment for children in public schools
                   </p>
                   <div className="bg-red-200 w-9 h-9 place-self-end rounded-tl-2xl">
                     <FaPlus size={20} className="mx-auto mt-2" />
@@ -319,13 +309,15 @@ function AboutUs() {
           <div className="w-full sm:order-last">
             <img src="/assets/female-kids.jpg" className="object-cover object-center" alt="" />
           </div>
-          <div className="max-w-xl self-center min-h-min p-3">
+          <div className="max-w-xl self-center min-h-min p-4">
             <h3 className="pb-3 text-sm">Volunteer</h3>
-            <p className="pb-3 text-3xl">Lorem ipsum, dolor sit amet <br />consectetur adipisicing elit.</p>
-            <p className=" pb-3 text-base">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-              Iure dolorum accusantium debitis voluptatibus. Unde deserunt fuga autem sequi harum cum?
+            <p className="pb-3 text-3xl">Volunteering and Helping: Empowering Tomorrow's Leaders</p>
+            <p className=" pb-3 text-base">It is through these selfless acts that we create a ripple effect, 
+              touching the lives of not only the children we serve but also the communities we are a part of.
             </p>
-            <button className="bg-blue-300 py-2 px-10 rounded-3xl">Join us</button>
+            <NavLink to={"/contactUs"}>
+              <button className="bg-blue-300 py-2 px-10 rounded-3xl">Join us</button>
+            </NavLink>
           </div>
         </div>
       </section>

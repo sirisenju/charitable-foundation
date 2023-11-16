@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaChevronRight, FaEnvelopeSquare, FaFacebookSquare, FaWhatsappSquare } from 'react-icons/fa'
+import { FaChevronRight, FaEnvelope, FaEnvelopeSquare, FaFacebook, FaFacebookSquare, FaTwitter, FaWhatsapp, FaWhatsappSquare } from 'react-icons/fa'
 
 function Footer() {
     return (
@@ -12,9 +12,9 @@ function Footer() {
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <div className='flex pt-2 gap-x-2'>
-                        <FaFacebookSquare size={25}/>
-                        <FaWhatsappSquare size={25}/>
-                        <FaEnvelopeSquare size={25}/>
+                        <FaFacebook size={25}/>
+                        <FaWhatsapp size={25}/>
+                        <FaEnvelope size={25}/>
                     </div>
                 </div>
                 <div className='grid grid-cols-2 md:grid-cols-3'>

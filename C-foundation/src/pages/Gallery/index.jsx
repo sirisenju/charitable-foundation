@@ -12,13 +12,15 @@ function Gallery() {
       <section className="min-h-min">
         <div className="w-full sm:w-[90%] mx-auto p-2 sm:p-0 xl:max-w-7xl">
           {/**heading for our gallery */}
-          <div className="max-w-sm text-center mx-auto pt-8 pb-4">
+          <div className="max-w-2xl text-center mx-auto pt-8 pb-4">
             <h3 className="font-semibold text-3xl pb-2">
               Welcome to our Gallery.
             </h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-              a esse quam at commodi iste!
+              Step into a world where stories unfold in pixels and colors. 
+              Our gallery of images is a tapestry of moments, each frame capturing 
+              the essence of our mission, the resilience of those we serve, and the 
+              transformative power of collective action.
             </p>
           </div>
 
@@ -133,13 +135,11 @@ function Gallery() {
       <section className="h-full">
         <div className="w-[80%] mx-auto block lg:flex p-2 pt-12 pb-10 xl:max-w-6xl">
           <div className="max-w-lg p-2 sm:pr-7">
-            <h3 className=" text-3xl font-semibold pt-3 pb-3">
-              Why Choose Us?
-            </h3>
-            <p className=" pb-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-              quasi tempora culpa iste eos a ipsam voluptatum expedita nesciunt,
-              aspernatur necessitatibus ut velit natus sapiente exercitationem.
+            <p className="text-base pb-3">
+              Thank you for being the driving force behind our endeavors. 
+              Your belief in our cause fuels our passion and propels us toward impactful milestones. 
+              Let's continue this journey together, hand in hand, as we shape a world where compassion 
+              knows no bounds.
             </p>
             {/**the accordian container starts....................................................*/}
             <div className="accordion">
@@ -168,10 +168,9 @@ function Gallery() {
           <div className="w-full mt-8 pb-10 p-2">
             <div className="max-w-xl mx-auto text-center">
               <h3 className="text-2xl pt-2 pb-2">Sponsors and Partners.</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Similique, sit perferendis! Ipsum soluta tempore quaerat quos
-                voluptatem, iusto aliquam quisquam.
+              <p className="text-base">
+                At The Royal Family Charitable Foundation, we extend our heartfelt appreciation to our sponsors and partners. 
+                Your unwavering support is the cornerstone of our impact.
               </p>
             </div>
             <div className="flex flex-wrap justify-center gap-x-20 gap-y-10 pt-8">

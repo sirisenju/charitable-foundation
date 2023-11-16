@@ -5,6 +5,7 @@ import {
   Route,
   Routes,
   useLocation,
+  BrowserRouter,
 } from "react-router-dom";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
@@ -24,10 +25,10 @@ function App() {
   };
 
   return (
-    <Router>
+    <BrowserRouter>
       <Wrapper>
         <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/aboutUs" element={<AboutUs />} />
           <Route path="/ourWork" element={<OurWork />} />
           <Route path="/contactUs" element={<ContactUs />} />
@@ -35,7 +36,7 @@ function App() {
           <Route path="/donation" element={<Donation />} />
         </Routes>
       </Wrapper>
-    </Router>
+    </BrowserRouter>
   );
 }
 

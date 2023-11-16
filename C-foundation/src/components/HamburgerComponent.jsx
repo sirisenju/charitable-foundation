@@ -18,7 +18,7 @@ function HamburgerComponent() {
           setIsOpen(false);
         }}
       >
-        <div className="overflow-auto">
+        <div className="overflow-auto text-white">
           <Hamburger 
             toggled={isOpen} 
             toggle={handleToggle} 
@@ -28,10 +28,10 @@ function HamburgerComponent() {
             color="black"
             />
             {isOpen && (
-              <div className="fixed z-10 hamburger-style h-full w-[75%] top-0 left-0 bg-red-300 p-4">
+              <div className="fixed z-10 hamburger-style h-full w-[75%] top-0 left-0 bg-[#2c2c2c] p-4">
                 <div className='flex gap-x-2'>
                   <img src="/assets/logo1.png" className=' h-12 w-12' alt="" />
-                  <p>The Royal Family Charitable Foundation</p>
+                  <p className='text-white'>The Royal Family Charitable Foundation</p>
                 </div>
                 <div className="grid place-content-start gap-y-5 pt-10 pb-10">
                   {navigation.map((item) => (

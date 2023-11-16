@@ -10,10 +10,10 @@ function ContactUs() {
             {/**volunteer section starts...................................................................... */}
             <section className='min-h-max pb-10 sm:mt-10'>
                 <div className='w-full sm:w-[80%] mx-auto p-2 max-w-7xl'>
-                    <div className='max-w-sm text-center mx-auto'>
+                    <div className='max-w-xl text-center mx-auto'>
                             <h3 className='font-semibold text-4xl pb-2'>Volunteers</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Molestiae a esse quam at commodi iste!
+                            <p>Together, let's compose a masterpiece of compassion, where every note 
+                                played and every emotion shared contributes to a more empathetic and connected world. 
                             </p>
                     </div>
                     <div>
@@ -22,11 +22,17 @@ function ContactUs() {
                         <img src="/assets/volunteer2.png" className='w-[570px] h-[450px] object-cover object-center' alt="" />
                     </div>
                     <div className='text-start sm:text-justify pt-4'>
-                        <h3 className=' text-3xl font-semibold pb-2'>Become a volunteer today, become one of us.</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel doloribus quas, cumque inventore numquam sunt explicabo 
-                            enim consectetur veritatis quis esse distinctio saepe repudiandae assumenda omnis obcaecati, iste expedita. 
-                            Nam praesentium iure fuga pariatur non numquam, tempore saepe repellat! Ut perspiciatis aspernatur enim, ipsam, molestias 
-                            odio quis cupiditate totam illo quae laborum, ab et doloribus error itaque. Eveniet, voluptatum dolor!
+                        <h3 className='text-2xl font-semibold pb-2'>Become a volunteer today, become one of us.</h3>
+                        <p>At The Royal Family Charitable Foundation, we believe in the transformative power of 
+                            emotions — the profound impact of a shared smile, the warmth of a comforting embrace, 
+                            and the joy that emanates from the depths of genuine connection. Volunteering and helping 
+                            are not just actions for us; they are the threads that weave a tapestry of hope, compassion, and love.
+                        </p>
+                        <h3 className='text-2xl font-semibold pt-4'>The Heartbeat of Hope:</h3>
+                        <p>Volunteering is the heartbeat of hope in our mission. It's the rhythmic pulse of individuals who 
+                            choose to extend the reach of their hearts beyond themselves. In every volunteered moment, we witness 
+                            the birth of hope, as our volunteers become storytellers of resilience, crafting tales of strength and 
+                            optimism for the children we serve.
                         </p>
                     </div>
                 </div>
@@ -37,10 +43,14 @@ function ContactUs() {
             {/**volunteer team section starts...................................................................... */}
             <section className='min-h-min'>
                 <div className='w-full sm:w-[80%] mx-auto pb-0 sm:pb-[5%] p-2 xl:max-w-7xl'>
-                    <div className='max-w-lg pt-10'>
+                    <div className='w-full pt-10'>
                         <h3 className='text-3xl'>Volunteer Team</h3>
-                        <p className='text-start sm:text-justify text-base pb-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dolor eius porro rem odit officia 
-                            aliquam necessitatibus magni, incidunt maiores? Eos, sed qui eveniet maxime est modi assumenda?
+                        <p className='text-start sm:text-justify text-lg sm:text-base pb-5'>
+                            At The Royal Family Charitable Foundation, our team of volunteers is not just a collection 
+                            of individuals; they are the architects of dreams, the weavers of hope, and the heartbeat of 
+                            our mission. Each volunteer brings a unique melody to the symphony of compassion, creating a 
+                            harmonious ensemble that resonates with warmth, empathy, and a shared commitment to making a 
+                            difference.
                         </p>
                     </div>
                     <div className='block sm:flex sm:flex-wrap h-full justify-between'>
@@ -100,10 +110,13 @@ function ContactUs() {
             {/**our donors map start...................................................................... */}
             <section className='min-h-min'>
                 <div className='w-full sm:w-[80%] mx-auto p-4 xl:max-w-6xl'>
-                    <div className='max-w-lg sm:pt-10 text-center mx-auto'>
+                    <div className='max-w-3xl sm:pt-10 sm:text-center mx-auto'>
                         <h3 className='text-3xl pb-2'>Our Donors</h3>
-                        <p className=' text-base pb-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dolor eius porro rem odit officia 
-                            aliquam necessitatibus magni, incidunt maiores? Eos, sed qui eveniet maxime est modi assumenda?
+                        <p className='text-lg sm:text-base pb-5'>As we strive to make a lasting impact, we invite you to join 
+                            hands with us once again. Your donation, no matter the size, fuels the engine of change, 
+                            turning dreams into reality. Together, let's continue this journey of compassion and transformation.
+                            Your generosity is not just a donation; it's a catalyst for change. Join us in shaping a world where 
+                            every child's potential is realized. Together, we can make a difference.
                         </p>
                     </div>
                     <img src="/assets/Donor-Map.png" className='object-center object-contain h-full w-full' alt="" />
@@ -114,10 +127,11 @@ function ContactUs() {
             {/**stay in contact section starts...................................................................... */}
             <section className='min-h-min'>
                 <div className='bg-[#FFF8F8] w-full sm:w-[80%] mx-auto pb-10 p-2 xl:max-w-6xl'>
-                    <div className='max-w-lg pt-10 text-center mx-auto'>
+                    <div className='max-w-2xl pt-10 text-center mx-auto'>
                         <h3 className='text-3xl pb-2'>Connect with us.</h3>
-                        <p className=' text-base pb-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dolor eius porro rem odit officia 
-                            aliquam necessitatibus magni, incidunt maiores? Eos, sed qui eveniet maxime est modi assumenda?
+                        <p className=' text-base pb-5'>Stay in the loop with The Royal Family Charitable Foundation! Connect with us for the 
+                            latest updates, inspiring stories, and opportunities to make a difference.
+                            Drop us a message here. Together, let's build a community of positive change!
                         </p>
                     </div>
                     <div className='max-w-3xl mx-auto pt-7'>
