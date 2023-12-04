@@ -23,7 +23,14 @@ function Home() {
           backgroundImage: `url("/assets/smilling-children.jpg")`,
         }}
       >
-        <header className="w-full pt-0">
+        <header
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out-sine"
+          className="w-full pt-0"
+        >
           <div className="mx-auto w-full lg:w-[80%] xl:max-w-6xl flex max-[450px]:block sm:justify-between sm:mx-auto p-3 items-center text-[#DFFFFF]">
             <img
               src="/assets/logo1.png"
@@ -31,7 +38,7 @@ function Home() {
               alt=""
             />
             <p className="font-bold text-3xl max-[450px]:pl-0 pl-10 text-center max-[450px]:pt-2">
-              The Royal Family Charitable Foundation
+              The Royal Family Charitable Empowerment Foundation
             </p>
             <ul className="hidden sm:flex w-auto sm:gap-x-8 text-center p-3">
               {homeNavigation.map((item) => (
@@ -50,7 +57,14 @@ function Home() {
         </header>
         {/**bottom card section...... */}
         <div className="w-[80%] mx-auto flex justify-start sm:justify-center mb-[15%] xl:max-w-6xl">
-          <div className="max-w-md mt-12 p-2 text-[#DFFFFF]">
+          <div
+            data-aos="zoom-in"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out-sine"
+            className="max-w-md mt-12 p-2 text-[#DFFFFF]"
+          >
             <h1 className=" text-3xl font-semibold pb-4">
               The Happiness is Giving Away.
             </h1>
@@ -64,7 +78,14 @@ function Home() {
         </div>
         <div className="h-full sm:h-[50%] xl:max-w-6xl p-2 items-end pb-2 w-full sm:w-[80%] mx-auto gap-y-7 sm:gap-y-4 gap-x-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 place-items-center text-white">
           {/**first card-------------------------------- */}
-          <div className="max-w-xs min-h-full text-center bg-[#425F57]/70 border border-[#CFFF8D] rounded-3xl p-2">
+          <div
+            data-aos="zoom-in"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out-sine"
+            className="max-w-xs min-h-full text-center bg-[#425F57]/70 border border-[#CFFF8D] rounded-3xl p-2"
+          >
             <h1 className="text-xl">
               <span className="flex justify-center pb-4 pt-2">
                 <FaRibbon color="#CFFF8D" size={60} />
@@ -82,7 +103,14 @@ function Home() {
             </NavLink>
           </div>
           {/**second card-------------------------------- */}
-          <div className="max-w-xs min-h-full text-center bg-[#425F57]/70 border border-[#CFFF8D] rounded-3xl p-2">
+          <div
+            data-aos="zoom-in"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out-sine"
+            className="max-w-xs min-h-full text-center bg-[#425F57]/70 border border-[#CFFF8D] rounded-3xl p-2"
+          >
             <h1 className="text-xl">
               <span className="flex justify-center pb-2 pt-2">
                 <FaPeopleCarry color="#CFFF8D" size={60} />
@@ -101,7 +129,14 @@ function Home() {
             </NavLink>
           </div>
           {/**third card-------------------------------- */}
-          <div className="max-w-xs min-h-full text-center bg-[#425F57]/70 border border-[#CFFF8D] rounded-3xl p-2">
+          <div
+            data-aos="zoom-in"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out-sine"
+            className="max-w-xs min-h-full text-center bg-[#425F57]/70 border border-[#CFFF8D] rounded-3xl p-2"
+          >
             <h1 className="text-xl">
               <span className="flex justify-center pb-2 pt-2">
                 <FaHeadset color="#CFFF8D" size={60} />
@@ -120,7 +155,14 @@ function Home() {
             </NavLink>
           </div>
           {/**fourth card-------------------------------- */}
-          <div className="max-w-xs min-h-full text-center bg-[#425F57]/70 border border-[#CFFF8D] rounded-3xl p-2">
+          <div
+            data-aos="zoom-in"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out-sine"
+            className="max-w-xs min-h-full text-center bg-[#425F57]/70 border border-[#CFFF8D] rounded-3xl p-2"
+          >
             <h1 className="text-xl">
               <span className="flex justify-center pb-2 pt-2">
                 <FaUserGraduate color="#CFFF8D" size={60} />

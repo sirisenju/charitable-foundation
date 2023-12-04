@@ -28,10 +28,10 @@ function HamburgerComponent() {
             color="white"
             />
             {isOpen && (
-              <div className="fixed z-10 hamburger-style h-full w-[75%] top-0 left-0 bg-[#C5BAAA] p-4">
+              <div className="fixed z-10 hamburger-style h-full w-[65%] top-0 left-0 bg-[#C5BAAA] p-4" data-aos="slide-down">
                 <div className='flex gap-x-2'>
-                  <img src="/assets/logo1.png" className=' h-12 w-12' alt="" />
-                  <p className='text-white'>The Royal Family Charitable Foundation</p>
+                  <img src="/assets/logo1.png" loading='lazy' className='h-12 w-12' alt="" />
+                  <p className='text-white'>The Royal Family Charitable Empowerment Foundation</p>
                 </div>
                 <div className="grid place-content-start gap-y-5 pt-10 pb-10">
                   {navigation.map((item) => (
@@ -54,7 +54,7 @@ function HamburgerComponent() {
                 <div className='w-full'>
                   <NavLink 
                   to={"/donation"}>
-                    <button className='px-11 py-2 bg-yellow-500 rounded-lg font-boldFont'>Donate</button>
+                    <button className='shadow-lg px-11 py-2 bg-yellow-500 rounded-lg font-boldFont'>Donate</button>
                   </NavLink>
                 </div>
               </div>

@@ -2,48 +2,74 @@ import React from "react";
 import NavLinks from "../../components/NavLinks";
 import Footer from "../../components/Footer";
 import { NavLink } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
 
 function OurWork() {
   return (
     <main>
       <NavLinks />
       {/**hero section for our work.........................................................*/}
-      <section className="h-full bg-[#F8F7FF] pb-[6%]">
-        <div className="w-full md:w-[90%] mx-auto sm:flex justify-between items-center max-w-5xl">
+      <section className="h-full bg-[#F8F7FF] pb-[6%] overflow-clip">
+        <div
+          data-aos="fade-left"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out-sine"
+          className="overflow-clip w-full md:w-[90%] mx-auto sm:flex justify-between items-center max-w-5xl"
+        >
           <div className="w-full sm:max-w-xl p-2">
             <p className="pb-3">Our work</p>
             <h2 className="text-3xl pb-3 font-semibold">
               The joy is in giving.
             </h2>
             <p className="text-xl sm:text-lg">
-              At The Royal Family Charitable Foundation, our work is more than a
-              mission; it's a commitment to crafting a future filled with
-              possibilities. Through dedicated efforts, we strive 'to empower
-              young minds, create lasting impact, and sow the seeds of positive
-              change. Join us in this transformative journey, where every
-              action, big or small, contributes to building a world where hope
-              flourishes and dreams thrive.
+              At The Royal Family Charitable Empowerment Foundation, our work is
+              more than a mission; it's a commitment to crafting a future filled
+              with possibilities. Through dedicated efforts, we strive 'to
+              empower young minds, create lasting impact, and sow the seeds of
+              positive change. Join us in this transformative journey, where
+              every action, big or small, contributes to building a world where
+              hope flourishes and dreams thrive.
             </p>
           </div>
           <div className="w-full bg-transparent p-2 sm:p-5">
-            <div className="h-[300px] sm:h-[300px]">
+            <div
+              className="h-[300px] sm:h-[270px]"
+              data-aos="slide-up"
+              data-aos-delay="100"
+            >
               <img
-                src="/assets/4-kids.jpg"
+                src="/assets/medicalBoard.jpg"
+                loading="lazy"
                 className="sm:rounded-tr-[100px] sm:rounded-bl-[100px] h-full w-full object-cover"
                 alt=""
               />
             </div>
             <div className="sm:flex sm:flex-wrap w-full sm:gap-x-4">
-              <div className="w-full sm:w-1/2 flex-grow basis-[210px] sm:pt-4">
+              <div
+                className="w-full sm:w-1/2 flex-grow basis-[210px] sm:pt-4"
+                data-aos="slide-up"
+                data-aos-delay="150"
+              >
                 <img
-                  src="/assets/female-kids.jpg"
+                  src="/assets/childrenMeetup.jpg"
+                  loading="lazy"
                   className="h-[210px] sm:h-[190px] w-full object-cover sm:rounded-tr-[100px] sm:rounded-bl-[100px]"
                   alt=""
                 />
               </div>
-              <div className="w-full sm:w-1/2 sm:pt-4 flex-grow basis-[210px]">
+              <div
+                className="w-full sm:w-1/2 sm:pt-4 flex-grow basis-[210px]"
+                data-aos="slide-up"
+                data-aos-delay="200"
+              >
                 <img
                   src="/assets/smilling-children.jpg"
+                  loading="lazy"
                   className="h-[210px] sm:h-[190px] w-full object-cover sm:rounded-tr-[100px] sm:rounded-bl-[100px]"
                   alt=""
                 />
@@ -56,7 +82,7 @@ function OurWork() {
 
       {/**seccond section starts for our work.........................................................*/}
       <section className="h-full bg-[#2C2C2C]/90">
-        <div className="w-full sm:w-[90%] min-h-min mx-auto pb-14 p-2 max-w-6xl">
+        <div className="w-full sm:w-[90%] min-h-min mx-auto pb-14 p-2 max-w-6xl overflow-clip">
           <div className="sm:w-[75%] mx-auto mb-4 pt-4 pb-4 text-white">
             <h3 className="text-xl font-semibold pb-2">Donate who Deserved</h3>
             <p className="text-base sm:text-lg max-w-[600px]">
@@ -72,17 +98,21 @@ function OurWork() {
               className="h-[600px] object-center mx-auto hidden sm:block"
               alt=""
             />
-            <div className="h-auto w-full sm:max-w-md sm:absolute bg-[#2c2c2c]/70 rounded-lg backdrop-blur-xl bg-opacity-50 shadow-lg top-0 left-[10%] p-2 flex flex-wrap mb-4">
+            <div
+              data-aos="slide-right"
+              data-aos-delay="100"
+              data-aos-easing="ease-in-out"
+              className="h-auto w-full sm:max-w-md sm:absolute bg-[#2c2c2c]/70 rounded-lg backdrop-blur-xl bg-opacity-50 shadow-lg top-0 left-[10%] p-2 flex flex-wrap mb-4"
+            >
               <img
+                loading="lazy"
                 src="/assets/simple-smile.jpg"
                 className=" object-cover h-28 w-28 relative"
                 alt=""
               />
               <div className="pl-4 self-center relative flex-grow basis-[120px] items-start text-white">
                 <p className="pb-2">
-                  Name: Precious King. <br />
-                  Age: 10 years old <br />
-                  Dream: To become a doctor
+                "Charity is the heartbeat of humanity, a rhythm that echoes the compassion within us all."
                 </p>
                 <NavLink to={"/donation"}>
                   <button className="bg-[#C5bAAA]/30 px-7 py-1 rounded-lg">
@@ -91,17 +121,21 @@ function OurWork() {
                 </NavLink>
               </div>
             </div>
-            <div className="min-h-min w-full sm:max-w-sm sm:absolute p-2 bg-[#2c2c2c]/70 rounded-lg backdrop-blur-xl bg-opacity-50 shadow-lg top-[23%] -right-[18%] flex flex-wrap mb-4">
+            <div
+              data-aos="slide-left"
+              data-aos-delay="100"
+              data-aos-easing="ease-in-out"
+              className="min-h-min w-full sm:max-w-sm sm:absolute p-2 bg-[#2c2c2c]/70 rounded-lg backdrop-blur-xl bg-opacity-50 shadow-lg top-[23%] -right-[18%] flex flex-wrap mb-4"
+            >
               <img
-                src="/assets/simple-smile.jpg"
+                loading="lazy"
+                src="/assets/kid2.jpg"
                 className=" object-cover h-28 w-28 relative"
                 alt=""
               />
               <div className="relative flex-grow basis-[120px] pl-4 items-start text-white">
                 <p className="pb-2">
-                  Name: Precious King. <br />
-                  Age: 10 years old <br />
-                  Dream: To become a doctor
+                "In the currency of kindness, charity is the richest expression of wealth."
                 </p>
                 <NavLink to={"/donation"}>
                   <button className="bg-[#C5bAAA]/30  px-7 py-1 rounded-lg">
@@ -110,17 +144,21 @@ function OurWork() {
                 </NavLink>
               </div>
             </div>
-            <div className="h-auto w-full sm:max-w-sm p-2 sm:absolute bg-[#2c2c2c]/70 rounded-lg backdrop-blur-xl bg-opacity-50 shadow-lg top-[43%] -left-[10%] flex flex-wrap mb-4">
+            <div
+              data-aos="slide-left"
+              data-aos-delay="100"
+              data-aos-easing="ease-in-out"
+              className="h-auto w-full sm:max-w-sm p-2 sm:absolute bg-[#2c2c2c]/70 rounded-lg backdrop-blur-xl bg-opacity-50 shadow-lg top-[43%] -left-[10%] flex flex-wrap mb-4"
+            >
               <img
-                src="/assets/simple-smile.jpg"
-                className=" object-cover h-28 w-28 relative"
+                loading="lazy"
+                src="/assets/kid3.jpg"
+                className="object-cover object-top h-28 w-28 relative"
                 alt=""
               />
               <div className="flex-grow basis-[120px] pl-4 relative items-start text-white">
                 <p className="pb-2">
-                  Name: Precious King. <br />
-                  Age: 10 years old <br />
-                  Dream: To become a doctor
+                "A single act of charity creates a ripple of hope that can touch the shores of countless hearts."
                 </p>
                 <NavLink to={"/donation"}>
                   <button className="bg-[#C5bAAA]/30  px-7 py-1 rounded-lg">
@@ -129,17 +167,21 @@ function OurWork() {
                 </NavLink>
               </div>
             </div>
-            <div className="h-auto w-full sm:max-w-sm p-2 sm:absolute bg-[#2c2c2c]/70 rounded-lg backdrop-blur-xl bg-opacity-50 shadow-lg  bottom-[13%] right-[3%] flex flex-wrap mb-4">
+            <div
+              data-aos="slide-right"
+              data-aos-delay="100"
+              data-aos-easing="ease-in-out"
+              className="h-auto w-full sm:max-w-sm p-2 sm:absolute bg-[#2c2c2c]/70 rounded-lg backdrop-blur-xl bg-opacity-50 shadow-lg  bottom-[13%] right-[3%] flex flex-wrap mb-4"
+            >
               <img
-                src="/assets/simple-smile.jpg"
+                loading="lazy"
+                src="/assets/kid4.jpg"
                 className=" object-cover h-28 w-28"
                 alt=""
               />
               <div className="flex-grow basis-[120px] pl-4 relative items-start text-white">
                 <p className="pb-2">
-                  Name: Precious King. <br />
-                  Age: 10 years old <br />
-                  Dream: To become a doctor
+                "Charity is not just giving, it's the art of changing lives with the brushstrokes of love and empathy."
                 </p>
                 <NavLink to={"/donation"}>
                   <button className="bg-[#C5bAAA]/30  px-7 py-1 rounded-lg">
@@ -148,17 +190,21 @@ function OurWork() {
                 </NavLink>
               </div>
             </div>
-            <div className="h-auto w-full sm:max-w-sm p-2 sm:absolute bg-[#2c2c2c]/70 rounded-lg backdrop-blur-xl bg-opacity-50 shadow-lg -bottom-[5%] -left-[8%] flex flex-wrap">
+            <div
+              data-aos="slide-left"
+              data-aos-delay="100"
+              data-aos-easing="ease-in-out"
+              className="h-auto w-full sm:max-w-sm p-2 sm:absolute bg-[#2c2c2c]/70 rounded-lg backdrop-blur-xl bg-opacity-50 shadow-lg -bottom-[5%] -left-[8%] flex flex-wrap"
+            >
               <img
-                src="/assets/simple-smile.jpg"
-                className=" object-cover h-28 w-28"
+                loading="lazy"
+                src="/assets/kid5.jpg"
+                className=" object-cover h-28 w-28 object-top"
                 alt=""
               />
               <div className="flex-grow basis-[120px] pl-4 relative items-start text-white">
                 <p className="pb-2">
-                  Name: Precious King. <br />
-                  Age: 10 years old <br />
-                  Dream: To become a doctor
+                "In the garden of humanity, charity is the seed that blossoms into a tapestry of compassion, uniting us all."
                 </p>
                 <NavLink to={"/donation"}>
                   <button className=" bg-[#C5bAAA]/30 px-7 py-1 rounded-lg">
@@ -174,22 +220,34 @@ function OurWork() {
 
       {/**story section starts for our work.........................................................*/}
       <section className="h-full">
-        <div className="w-full sm:w-[80%] min-h-min mx-auto p-2">
-          <div className="max-w-3xl mx-auto">
+        <div className="w-full sm:w-[80%] min-h-min mx-auto p-2 overflow-clip">
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="100"
+            className="max-w-3xl mx-auto"
+          >
             <h3 className="text-start sm:text-center text-2xl pb-2 pt-4">
               Read our stories, share our dreams.
             </h3>
             <p className="text-base pb-2 pt-2 sm:text-center">
-                Dive into the tapestry of inspiring stories that define us. 
-                Each narrative is a brushstroke, painting a picture of resilience, 
-                hope, and the transformative power of compassion.
+              Dive into the tapestry of inspiring stories that define us. Each
+              narrative is a brushstroke, painting a picture of resilience,
+              hope, and the transformative power of compassion.
             </p>
           </div>
-          <div className="max-w-4xl mx-auto mt-5">
+          <div
+            className="max-w-4xl mx-auto mt-5"
+            data-aos="zoom-in"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out-sine"
+          >
             <h3 className="text-3xl pb-4">Story of Kevwe</h3>
-            <div className="float-none sm:float-right pl-0 sm:pl-10">
+            <div className="float-none sm:float-right pl-0 sm:pl-8">
               <img
-                src="/assets/emilia.jpg"
+                src="/assets/4Children.jpg"
+                loading="lazy"
                 className="h-[330px] sm:w-[290px] w-full object-cover"
                 alt=""
               />
@@ -230,13 +288,21 @@ function OurWork() {
               promise of a brighter tomorrow.
             </p>
           </div>
-          <div className="max-w-4xl mx-auto mt-5">
+          <div
+            data-aos="zoom-in"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out-sine"
+            className="max-w-4xl mx-auto mt-5"
+          >
             <h3 className="text-3xl pb-4 text-start sm:text-end">
               Story of Esther
             </h3>
-            <div className="float-none sm:float-left pr-0 sm:pr-10">
+            <div className="float-none sm:float-left pr-0 sm:pr-8">
               <img
                 src="/assets/emilia.jpg"
+                loading="lazy"
                 className="h-[330px] sm:w-[290px] w-full object-cover"
                 alt=""
               />
@@ -276,37 +342,57 @@ function OurWork() {
             </p>
           </div>
           <div className="w-full mt-8 pb-10 p-2">
-            <div className="max-w-4xl mx-auto text-center">
+            <div
+              data-aos="slide-right"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out-sine"
+              className="max-w-4xl mx-auto text-center"
+            >
               <h3 className="text-2xl pt-2 pb-2">Sponsors and Partners.</h3>
               <p className=" text-base">
-              Your unwavering support is the cornerstone of our mission. Through your commitment, 
-              we forge pathways to positive change, transforming dreams into reality. Together, 
-              we create a powerful alliance that uplifts communities, empowers individuals, and 
-              builds a future filled with promise.
+                Your unwavering support is the cornerstone of our mission.
+                Through your commitment, we forge pathways to positive change,
+                transforming dreams into reality. Together, we create a powerful
+                alliance that uplifts communities, empowers individuals, and
+                builds a future filled with promise.
               </p>
             </div>
-            <div className="flex flex-wrap justify-center gap-x-20 gap-y-10 pt-8">
+            <div
+              data-aos="slide-right"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out-sine"
+              className="flex flex-wrap justify-center gap-x-20 gap-y-10 pt-8"
+            >
               <img
+                loading="lazy"
                 src="/assets/logos/logo-1.png"
                 className=" h-20 w-32 object-contain flex-grow basis-[100px]"
                 alt="Logo"
               />
               <img
+                loading="lazy"
                 src="/assets/logos/logo-2.png"
                 className=" h-20 w-32 object-contain flex-grow basis-[100px]"
                 alt="Logo"
               />
               <img
+                loading="lazy"
                 src="/assets/logos/logo-3.png"
                 className=" h-20 w-32 object-contain flex-grow basis-[100px]"
                 alt="Logo"
               />
               <img
+                loading="lazy"
                 src="/assets/logos/logo-4.png"
                 className=" h-20 w-32 object-contain flex-grow basis-[100px]"
                 alt="Logo"
               />
               <img
+                loading="lazy"
                 src="/assets/logos/logo-5.png"
                 className=" h-20 w-32 object-contain flex-grow basis-[100px]"
                 alt="Logo"
