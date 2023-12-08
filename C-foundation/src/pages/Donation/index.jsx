@@ -102,7 +102,7 @@ function Donation() {
             </p>
             <div className="block sm:flex max-w-5xl">
               <img
-                src="/assets/simple-smile.jpg"
+                src="/assets/handingBooks.jpg"
                 loading="lazy"
                 className="w-[360px] h-full"
                 alt=""
@@ -133,15 +133,6 @@ function Donation() {
                     circumstances.
                   </li>
                 </ul>
-                <p className="pb-3 pt-3">Enter any amount, donate now.</p>
-                <input
-                  type="number"
-                  id="amount"
-                  name="amount"
-                  onChange={(e) => setAmount(e.target.value)}
-                  className="h-[30px] w-full sm:w-[200px] p-2 outline-none rounded-3xl shadow-lg"
-                  placeholder="10,000.00"
-                />
               </div>
             </div>
             <div className="max-w-2xl mt-4">
@@ -182,6 +173,17 @@ function Donation() {
                       onChange={handleInput}
                       value={userInfo.phonenumber}
                       placeholder="Phone"
+                      className="max-[390px]:w-full w-full p-3 h-10 outline-none rounded-3xl bg-transparent border-2 border-[#2C2C2C] shadow-lg"
+                    />
+                    <span style={{ color: "red" }}>{error.phonenumber}</span>
+                  </div>
+                  <div className="w-[50%] pb-2 flex">
+                    <label htmlFor="" className="pr-4 flex items-center">Donate:</label>
+                    <input
+                      type="number"
+                      id="amount"
+                      name="amount"
+                      placeholder="10,000.00"
                       className="max-[390px]:w-full w-full p-3 h-10 outline-none rounded-3xl bg-transparent border-2 border-[#2C2C2C] shadow-lg"
                     />
                     <span style={{ color: "red" }}>{error.phonenumber}</span>

@@ -10,7 +10,7 @@ function NavLinks() {
       <div className="w-full md:w-[90%] text-white mx-auto flex justify-between xl:max-w-6xl z-50">
         <div className="flex p-4">
           <NavLink to={"/"}>
-            <img src="/assets/logo1.png" className="w-8 h-8" alt="" />
+            <img src="/assets/logo1.png" className="w-10 h-10" alt="" />
           </NavLink>
           <p className="pl-2 sm:hidden">
             The Royal Family Charitable Empowerment Foundation
