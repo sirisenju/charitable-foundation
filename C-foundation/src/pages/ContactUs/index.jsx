@@ -5,6 +5,13 @@ import charitableTeam from "../../../lib/team";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 
+//email ids
+const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
+const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
+const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY;
+
+console.log(process.env)
+
 function ContactUs() {
   const [emailMessage, setEmailMessage] = useState({
     fullname: "",
@@ -37,40 +44,43 @@ function ContactUs() {
     event.preventDefault();
     const isValid = validateForm();
 
-    //email ids
-    const serviceId = "service_twsgtpf";
-    const templeteId = "template_8cqt27w";
-    const publicKey = "UYLqIlNsebaFbmi67";
-
-     //create new object for template
-     const templateParams = {
+    //create new object for template
+    const templateParams = {
       from_name: emailMessage.fullname,
       from_email: emailMessage.email,
       replyto: "charity@theroyalfamilycharitablefoundation.org",
       message: emailMessage.message,
       subject: emailMessage.subject,
-      phonenumber: emailMessage.phonenumber
+      phonenumber: emailMessage.phonenumber,
     };
 
     if (isValid) {
-    //send email using emailjs
-    setLoading(true);
-    emailjs
-    .send(serviceId, templeteId, templateParams, publicKey)
-    .then((response) => {
-      alert("Email Sent Successfully", response);
-      setEmailMessage({
-        fullname: "",
-        email: "",
-        subject: "",
-        phonenumber: "",
-        message: "",
-      });
-      setLoading(false);
-    })
-    .catch((error) => {
-      alert("Error sending email", error);
-    });
+      //send email using emailjs
+      setLoading(true);
+      emailjs
+        .send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY)
+        .then((response) => {
+          alert("Email Sent Successfully", response);
+          setEmailMessage({
+            fullname: "",
+            email: "",
+            subject: "",
+            phonenumber: "",
+            message: "",
+          });
+          setLoading(false);
+        })
+        .catch((error) => {
+          alert("Error sending email", error);
+          setEmailMessage({
+            fullname: "",
+            email: "",
+            subject: "",
+            phonenumber: "",
+            message: "",
+          });
+          setLoading(false);
+        });
     }
   };
 
@@ -153,10 +163,10 @@ function ContactUs() {
                 Become a volunteer today, become one of us.
               </h3>
               <p>
-                At The Royal Family Charitable Empowerment Foundation, we believe in the
-                transformative power of emotions — the profound impact of a
-                shared smile, the warmth of a comforting embrace, and the joy
-                that emanates from the depths of genuine connection.
+                At The Royal Family Charitable Empowerment Foundation, we
+                believe in the transformative power of emotions — the profound
+                impact of a shared smile, the warmth of a comforting embrace,
+                and the joy that emanates from the depths of genuine connection.
                 Volunteering and helping are not just actions for us; they are
                 the threads that weave a tapestry of hope, compassion, and love.
               </p>
@@ -187,12 +197,12 @@ function ContactUs() {
           >
             <h3 className="text-3xl">Meet Our Team</h3>
             <p className="text-start sm:text-justify text-lg sm:text-base pb-5">
-              At  Empowerment, our team of volunteers
-              is not just a collection of individuals; they are the architects
-              of dreams, the weavers of hope, and the heartbeat of our mission.
-              Each volunteer brings a unique melody to the symphony of
-              compassion, creating a harmonious ensemble that resonates with
-              warmth, empathy, and a shared commitment to making a difference.
+              At Empowerment, our team of volunteers is not just a collection of
+              individuals; they are the architects of dreams, the weavers of
+              hope, and the heartbeat of our mission. Each volunteer brings a
+              unique melody to the symphony of compassion, creating a harmonious
+              ensemble that resonates with warmth, empathy, and a shared
+              commitment to making a difference.
             </p>
           </div>
           <div className="block sm:flex sm:flex-wrap h-full justify-between gap-y-4">
@@ -268,10 +278,10 @@ function ContactUs() {
           <div className="max-w-2xl pt-10 text-center mx-auto">
             <h3 className="text-3xl pb-2">Connect with us.</h3>
             <p className=" text-base pb-5">
-              Stay in the loop with The Royal Family Charitable Empowerment Foundation!
-              Connect with us for the latest updates, inspiring stories, and
-              opportunities to make a difference. Drop us a message here.
-              Together, let's build a community of positive change!
+              Stay in the loop with The Royal Family Charitable Empowerment
+              Foundation! Connect with us for the latest updates, inspiring
+              stories, and opportunities to make a difference. Drop us a message
+              here. Together, let's build a community of positive change!
             </p>
           </div>
           <div
@@ -353,7 +363,7 @@ function ContactUs() {
                   disabled={loading}
                   className="bg-[#C5bAAA] py-2 px-10 rounded-3xl self-center shadow-lg"
                 >
-                   {loading ? "Sending...." : "Send"}
+                  {loading ? "Sending...." : "Send"}
                 </button>
               </div>
             </form>

@@ -50,7 +50,7 @@ function Gallery() {
                     alt=""
                   />
                   <div className="overlay">
-                    <span>pop up kkkk</span>
+                    <span></span>
                   </div>
                 </div>
                 <div
@@ -68,7 +68,7 @@ function Gallery() {
                     alt=""
                   />
                   <div className="overlay">
-                    <span>pop up iii</span>
+                    <span></span>
                   </div>
                 </div>
                 <div
@@ -86,7 +86,7 @@ function Gallery() {
                     alt=""
                   />
                   <div className="overlay">
-                    <span>pop up uu</span>
+                    <span></span>
                   </div>
                 </div>
                 <div
@@ -104,7 +104,7 @@ function Gallery() {
                     loading="lazy"
                   />
                   <div className="overlay">
-                    <span>pop up jjghuj</span>
+                    <span></span>
                   </div>
                 </div>
               </div>
@@ -124,7 +124,7 @@ function Gallery() {
                     loading="lazy"
                   />
                   <div className="overlay">
-                    <span>pop up vvvv</span>
+                    <span></span>
                   </div>
                 </div>
                 <div
@@ -142,7 +142,7 @@ function Gallery() {
                     loading="lazy"
                   />
                   <div className="overlay">
-                    <span>pop up ppp</span>
+                    <span></span>
                   </div>
                 </div>
                 <div
@@ -160,7 +160,7 @@ function Gallery() {
                     loading="lazy"
                   />
                   <div className="overlay">
-                    <span>pop up yyy</span>
+                    <span></span>
                   </div>
                 </div>
               </div>
@@ -180,7 +180,7 @@ function Gallery() {
                     loading="lazy"
                   />
                   <div className="overlay">
-                    <span>pop up eee</span>
+                    <span></span>
                   </div>
                 </div>
                 <div
@@ -198,7 +198,7 @@ function Gallery() {
                     loading="lazy"
                   />
                   <div className="overlay">
-                    <span>pop up lll</span>
+                    <span></span>
                   </div>
                 </div>
                 <div
@@ -216,7 +216,7 @@ function Gallery() {
                     alt=""
                   />
                   <div className="overlay">
-                    <span>pop up zzz</span>
+                    <span></span>
                   </div>
                 </div>
               </div>
@@ -228,7 +228,7 @@ function Gallery() {
 
       {/**the second section starts....................................................*/}
       <section className="h-full overflow-clip">
-        <div className="w-full sm:w-[80%] mx-auto block lg:flex p-2 pt-4 pb-10 xl:max-w-6xl bg-green-200">
+        <div className="w-full sm:w-[80%] mx-auto block lg:flex p-2 pt-4 pb-10 xl:max-w-6xl">
           <div
             data-aos="fade-right"
             data-aos-offset="200"

@@ -8,19 +8,23 @@ function NavLinks() {
   return (
     <section className="bg-[#2C2C2C]/90">
       <div className="w-full md:w-[90%] text-white mx-auto flex justify-between xl:max-w-6xl z-50">
-        <div className="flex p-4">
-          <NavLink to={"/"}>
-            <img src="/assets/logo1.png" className="w-10 h-10" alt="" />
-          </NavLink>
-          <p className="pl-2 sm:hidden">
-            The Royal Family Charitable Empowerment Foundation
-          </p>
-          <ul className="flex gap-x-6 items-center ml-16">
+        <div className="flex p-2">
+          <div className="flex">
+            <NavLink to={"/"}>
+              <img src="/assets/logo1.png" className="w-14 h-14 object-contain" alt="" />
+            </NavLink>
+            <p className="sm:hidden ml-4">
+              The Royal Family Charitable Empowerment Foundation
+            </p>
+          </div>
+          <ul className="flex gap-x-6 items-center pl-4">
             {navigation.map((item) => (
-              <li className="hidden sm:inline font-primaryfont text-base hover:underline">
+              <li
+                key={item.id}
+                className="hidden sm:inline font-primaryfont text-base hover:underline"
+              >
                 <NavLink
                   to={item.href}
-                  key={item.id}
                   className={({ isActive }) => (isActive ? "" : " ")}
                 >
                   {item.name}

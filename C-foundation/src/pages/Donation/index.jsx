@@ -2,15 +2,18 @@ import React from "react";
 import NavLinks from "../../components/NavLinks";
 import Footer from "../../components/Footer";
 import { useState } from "react";
-import { PaystackButton } from 'react-paystack'
+import { usePaystackPayment } from "react-paystack";
 
 function Donation() {
+  
+  const publicKey = import.meta.env.VITE_PK;
 
-  const [amount, setAmount] = useState();
+  const [amount, setAmount] = useState(100000);
   const [userInfo, setSetUserInfo] = useState({
     fullname: "",
     email: "",
     phonenumber: "",
+    amount: amount,
   });
 
   const [error, setError] = useState({
@@ -28,14 +31,41 @@ function Donation() {
     });
   };
 
+  const config = {
+    email: userInfo.email,
+    name: userInfo.fullname,
+    phonenumber: userInfo.phonenumber,
+    amount: amount,
+    publicKey: publicKey,
+  };
+
+  // First initialization of the Library
+  const initializePayment = usePaystackPayment(config);
+
+  // Callback if transaction is successful
+  const onSuccess = () => {
+    alert("Payment Successful, check your email for confirmation");
+  };
+
+  // Callback if payment gateway is closed
+  const onClose = () => {
+    alert("Opps, Payment not completed");
+  };
+
+  const handleAmountChange = (event) => {
+    const enteredAmount = event.target.value;
+    setAmount(enteredAmount * 100); // Convert amount to kobo
+  };
+
   const handleSubmit = async (event) => {
     event.preventDefault();
     const isValid = validateForm();
 
     if (isValid) {
-      alert("email sent successfully");
-      console.log(userInfo);
+      // // Trigger Payment Gateway on Form Submit
+      initializePayment(onSuccess, onClose);
       setSetUserInfo({ fullname: "", email: "", phonenumber: "" });
+      setAmount(100000);
     }
   };
 
@@ -63,21 +93,6 @@ function Donation() {
     return isValid;
   };
 
-
-  // const componentProps = {
-  //   email: userInfo.fullname,
-  //   amount: 
-  //   metadata: {
-  //     name, 
-  //     phone,
-  //   },
-  //   publicKey,
-  //   text: "Pay Now",
-  //   onSuccess: () =>
-  //     alert("Thanks for doing business with us! Come back soon!!"),
-  //   onClose: () => alert("Wait! You need this oil, don't go!!!!"),
-  // }
-
   return (
     <main>
       <NavLinks />
@@ -100,14 +115,14 @@ function Donation() {
               change. Your support enables us to provide education, healthcare,
               and hope to individuals and communities facing challenges.
             </p>
-            <div className="block sm:flex max-w-5xl">
+            <div className="block md:flex max-w-5xl">
               <img
                 src="/assets/handingBooks.jpg"
                 loading="lazy"
-                className="w-[360px] h-full"
+                className="w-full md:w-[360px] h-full"
                 alt=""
               />
-              <div className="w-full sm:max-w-2xl p-4 pt-4">
+              <div className="w-full flex-wrap sm:max-w-2xl p-4">
                 <p className=" text-xl font-semibold">Why Donate?</p>
                 <ul>
                   <li className="pt-2 text-base">
@@ -136,7 +151,7 @@ function Donation() {
               </div>
             </div>
             <div className="max-w-2xl mt-4">
-              <form action="" className="">
+              <form action="" className="" onSubmit={handleSubmit}>
                 <p className="pb-4 font-semibold text-xl">Personal info.</p>
                 <div className="flex gap-x-4 text-black max-[390px]:inline">
                   <div className="w-full pb-2">
@@ -178,20 +193,23 @@ function Donation() {
                     <span style={{ color: "red" }}>{error.phonenumber}</span>
                   </div>
                   <div className="w-[50%] pb-2 flex">
-                    <label htmlFor="" className="pr-4 flex items-center">Donate:</label>
+                    <label htmlFor="" className="pr-4 flex items-center">
+                      Donate:
+                    </label>
                     <input
                       type="number"
                       id="amount"
                       name="amount"
+                      onChange={handleAmountChange}
+                      value={(amount / 100).toFixed(2)}
                       placeholder="10,000.00"
                       className="max-[390px]:w-full w-full p-3 h-10 outline-none rounded-3xl bg-transparent border-2 border-[#2C2C2C] shadow-lg"
                     />
-                    <span style={{ color: "red" }}>{error.phonenumber}</span>
                   </div>
                 </div>
                 <div className="w-full flex justify-center sm:justify-start pt-2">
                   <button
-                    onClick={handleSubmit}
+                    type="submit"
                     className="bg-[#2C2C2C]/90 text-white py-2 px-10 rounded-3xl self-center shadow-lg"
                   >
                     Donate

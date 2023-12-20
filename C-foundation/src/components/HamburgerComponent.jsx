@@ -28,7 +28,7 @@ function HamburgerComponent() {
             color="white"
             />
             {isOpen && (
-              <div className="fixed z-10 hamburger-style h-full w-[65%] top-0 left-0 bg-[#C5BAAA] p-4" data-aos="slide-down">
+              <div className="fixed z-10 hamburger-style h-full w-[65%] top-0 left-0 bg-[#2C2C2C]/90 p-4" data-aos="slide-down">
                 <div className='flex gap-x-2'>
                   <img src="/assets/logo1.png" loading='lazy' className='h-12 w-12' alt="" />
                   <p className='text-white'>The Royal Family Charitable Empowerment Foundation</p>
@@ -40,8 +40,8 @@ function HamburgerComponent() {
                     key={item.id}
                     className={({ isActive }) => {
                       return (
-                        "hover:text-slate-600 hover:scale-110 text-lg transition ease-in delay-75 border-b-[#806D61] border-b-2" +
-                        (isActive ? " text-white" : " text-[#2C2C2C]")
+                        "hover:text-slate-600 hover:scale-110 text-lg transition ease-in delay-75 border-b-[#d4cfcc] border-b-2" +
+                        (isActive ? "text-[#2C2C2C]" : " text-white")
                       );
                     }}
                     >
@@ -49,12 +49,12 @@ function HamburgerComponent() {
                     </NavLink>
                   ))
                   }
-                  <p className='italic text-2xl font-semibold pt-4'>The joy is in giving</p>
+                  <p className='italic text-2xl font-semibold pt-4'>Caring is our value</p>
                 </div>
                 <div className='w-full'>
                   <NavLink 
                   to={"/donation"}>
-                    <button className='shadow-lg px-11 py-2 bg-yellow-500 rounded-lg font-boldFont'>Donate</button>
+                    <button className='shadow-lg px-11 py-2 bg-nav-color rounded-lg font-boldFont text-black'>Donate</button>
                   </NavLink>
                 </div>
               </div>

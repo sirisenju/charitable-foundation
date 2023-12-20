@@ -1,8 +1,6 @@
 import React from "react";
 import {
   FaChevronRight,
-  FaEnvelope,
-  FaFacebook,
   FaWhatsapp,
 } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
@@ -16,11 +14,11 @@ function Footer() {
             <img src="/assets/logo1.png" className="h-10 w-10" alt="" />
             <p className="pl-3">The Royal Family Charitable Empowerment Foundation</p>
           </div>
-          <p>The Joy Is In Giving.</p>
+          <p>Caring is our value.</p>
           <div className="flex pt-2 gap-x-2">
-            <FaFacebook size={25} />
-            <FaWhatsapp size={25} />
-            <FaEnvelope size={25} />
+            <a href="https://wa.me/message/FYUEQJ7MAWMGB1">
+              <FaWhatsapp size={25} />
+            </a>
           </div>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3">
