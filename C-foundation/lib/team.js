@@ -76,6 +76,13 @@ const charitableTeam = [
     quoat: `"A helping hand reaches farther than the arms can stretch, embracing the world in the warmth of charity."`,
     imageUrl: "/assets/evangelist.jpg",
   },
+  {
+    id: 12,
+    name: "Mr.Daniel Dafetta",
+    position: "RFCDF National Secretary",
+    quoat: `"Kindness, like a gentle breeze, travels beyond our grasp, wrapping the world in the comforting embrace of generosity."`,
+    imageUrl: "/assets/Mr.dan.jpg",
+  },
 ];
 
 export default charitableTeam;

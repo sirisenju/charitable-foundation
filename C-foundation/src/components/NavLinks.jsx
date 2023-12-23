@@ -11,7 +11,7 @@ function NavLinks() {
         <div className="flex p-2">
           <div className="flex">
             <NavLink to={"/"}>
-              <img src="/assets/logo1.png" className="w-14 h-14 object-contain" alt="" />
+              <img src="/assets/logo1.png" className="w-40 sm:w-12 h-12 object-contain" alt="" />
             </NavLink>
             <p className="sm:hidden ml-4">
               The Royal Family Charitable Empowerment Foundation
