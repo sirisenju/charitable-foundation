@@ -226,6 +226,58 @@ function Gallery() {
       </section>
       {/**the gallery section ends....................................................*/}
 
+      {/* new gallery section */}
+      <section className='h-full lg:h-screen w-full bg-white overflow-clip'>
+        <div className='h-full w-full lg:w-[80%] p-2 mx-auto pt-10 pb-10 2xl:max-w-7xl'>
+          <h2 className="text-4xl pb-2 pt-2 font-bold">Our OutReach Events.</h2>
+          <p className="text-2xl pb-4">We live what we preach......</p>
+          <div className='h-[60%] block lg:flex gap-2 pb-2'>
+            <div className='w-full lg:w-[50%]'>
+              <img src="assets/new-outreach/school-outreach.JPG" className='object-cover h-full w-full' alt="" />
+            </div>
+            <div className='w-full lg:w-[50%]'>
+              <div className='h-[50%] block lg:flex gap-2'>
+                <div className='w-full lg:w-[50%] h-full py-2 lg:py-0'><img src="assets/new-outreach/school-meetup.JPG" className='object-cover h-full w-full' alt="" /></div>
+                <div className='w-full lg:w-[50%] h-full '><img src="assets/new-outreach/group-photp-2.JPG" className='object-cover object-top h-full w-full' alt="" /></div>
+              </div>
+              <div className='h-[50%] pt-2'>
+                <img src="assets/new-outreach/orphanage-photo.JPG" className='object-cover object-top h-full w-full' alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div className='h-[40%] flex flex-wrap gap-2'>
+            <div className='basis-[220px] flex-grow'>
+              <img src="assets/new-outreach/outreach-image.JPG" className='object-cover h-full w-full' alt="" />
+            </div>
+            <div className='basis-[220px] flex-grow'>
+              <img src="assets/new-outreach/group-photo.JPG" className='object-cover h-full w-full' alt="" />
+            </div>
+            <div className='basis-[220px] flex-grow'>
+              <img src="assets/new-outreach/assembly.JPG" className='object-cover object-center h-full w-full' alt="" />
+            </div>
+            <div className='basis-[220px] flex-grow'>
+              <img src="assets/new-outreach/book-sharing.JPG" className='object-cover h-full w-full' alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Gallary section 2 */}
+      <section className='h-full w-full'>
+        <div className='w-full lg:w-[80%] mx-auto flex flex-wrap p-2 gap-2 2xl:max-w-7xl pt-10 pb-10'>
+          <div className='flex-grow basis-[220px]'>
+            <img src="assets/new-outreach/girl-gift-presentation.JPG" className='object-cover h-full w-full' alt="" />
+          </div>
+          <div className='flex-grow basis-[280px]'>
+            <img src="assets/new-outreach/standing-with-students.JPG" className='object-cover h-full w-full' alt="" />
+          </div>
+          <div className='flex-grow basis-[220px]'>
+            <img src="assets/new-outreach/book-with-kids.JPG" className='object-cover h-full w-full' alt="" />
+          </div>
+        </div>
+      </section>
+
       {/**the second section starts....................................................*/}
       <section className="h-full overflow-clip">
         <div className="w-full sm:w-[80%] mx-auto block lg:flex p-2 pt-4 pb-10 xl:max-w-6xl">
